@@ -6,39 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BancoChaco</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/icono-banco.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/inicio.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid"><img src="/img/icono-banco.png" alt="" width="50" height="54" class="d-inline-block align-text-top me-3">
-            <a class="navbar-brand" href="#">BancoChaco</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid"><img src="img/escala.png" alt="" class="d-inline-block align-text-top imagen-logo">
+            <a class="navbar-brand titulo-chaco" href="#">BancoChaco</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <div class="collapse navbar-collapse colapsador" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 listadoSlider">
+                    <li class="nav-item listado">
+                        <a class="nav-link active letra-slider" aria-current="page" href="#"><img src="img/home.png"
+                                alt="" width="30" height="24" class="d-inline-block align-text-top me-1">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="img/icono-banco.png" alt="" width="30" height="24" class="d-inline-block align-text-top me-1">Empresas</a>
+                    <li class="nav-item listado">
+                        <a class="nav-link letra-slider" href="#"><img src="img/empresas.png" alt="" width="30"
+                                height="24" class="d-inline-block align-text-top me-1">Empresas</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item dropdown listado">
+                        <a class="nav-link dropdown-toggle letra-slider" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><img src="img/eleccion.png" alt=""
+                                width="30" height="24" class="d-inline-block align-text-top me-1">
                             Opciones
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
                             <li><a class="dropdown-item" href="#">Contactanos</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -48,7 +50,171 @@
             </div>
         </div>
     </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <section class="container">
+        <div class="row justify-content-center"
+            style=" background-color: #f3f3f3; margin-top: 50px; padding-bottom: 39px;">
+            <div class="col-12" style="background: #f8f8fd;">
+                <h2 class="conocenos conocemos-1">¡Animate a crear tu cuenta de ahorros!</h2>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-3" style="background-color: thistle;">
+                <label style="margin-top: 20px"><img src="img/dar-dinero.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top me-1" style="margin-bottom: 20px;">Medios de pago
+                    Bancochaco</label>
+                <h2 class="lateral-izquierdo">
+                    ¡Alcanza tu sueño de tener casa propia!
+                </h2>
+                <p class="lateral-izquierdo1">
+                    Con Bancochaco tienes muchas opciones para pagar fácil y rápido.
+                </p>
+                <button type="button" class="btn btn-warning boton-banco">Conócelas aquí</button>
+            </div>
+
+            <div class="col-12 col-lg-6 col-md-6 carrusel-1"
+                style="padding: 0;  padding-top: 75px;  background: #f8f8fd;">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" style="background-color: yellow;"
+                            data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" style="background-color: yellow;"
+                            data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" style="background-color: yellow;"
+                            data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner" style="opacity: 75%; margin-left: 7px;">
+                        <div class="carousel-item active">
+                            <img src="img/carrusel/jovenes.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="carrusel-texto">Gestiona tu dia a dia</h5>
+                                <p class="parrafo-carrusel">Gestiona tu plata y ten control de tus gastos dia a dia</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carrusel/pareja2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="carrusel-texto">Cuidamos de ti y tu pareja</h5>
+                                <p class="parrafo-carrusel">Damos la oportunidad de crear y contruir</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carrusel/pareja3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="carrusel-texto">Quedate con nosotros toda una vida</h5>
+                                <p class="parrafo-carrusel">Nuestras tazas de interes no hacen que tu familia se
+                                    preocupe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-3 contenedor-alternativas" style="padding-top: 10px;
+            padding-left: 50px;  background-color: #b3e0db">
+                <div class="row">
+                    <label class="label-mejores">Las mejores opciones</label>
+                    <div class="col-4 col-lg-6 col-md-6"><img src="img/dar-dinero (1).png" alt="" width="53" height="40"
+                            class="d-inline-block align-text-top imagen-derecha"><a class="nav-link active parrafo-derecha" aria-current="page"
+                            href="#">Alternativas financieras</a>
+                    </div>
+                    <div class="col-4 col-lg-6 col-md-6"><img src="img/hoja-de-calculo.png" alt="" width="53" height="40"
+                            class="d-inline-block align-text-top imagen-derecha"><a class="nav-link active parrafo-derecha" aria-current="page"
+                            href="#">Subsidios</a>
+                    </div>
+                    <div class="col-4 col-lg-6 col-md-6"><img src="img/metodo-de-pago.png" alt="" width="53" height="40"
+                            class="d-inline-block align-text-top imagen-derecha"><a class="nav-link active parrafo-derecha" aria-current="page"
+                            href="#">Pagos</a>
+                    </div>
+                    <div class="col-4 col-lg-6 col-md-6"><img src="img/contrato.png" alt="" width="53" height="40"
+                            class="d-inline-block align-text-top imagen-derecha"><a class="nav-link active parrafo-derecha" aria-current="page"
+                            href="#">Solicitud de documentos</a>
+                    </div>
+                    <div class="col-4 col-lg-6 col-md-6"><img src="img/informacion.png" alt="" width="53" height="40"
+                            class="d-inline-block align-text-top imagen-derecha"><a class="nav-link active parrafo-derecha" aria-current="page"
+                            href="#">Centro de Ayuda</a>
+                    </div>
+                    <div class="col-4 col-lg-6 col-md-6"><img src="img/sonreir.png" alt="" width="53" height="40"
+                            class="d-inline-block align-text-top imagen-derecha"><a class="nav-link active parrafo-derecha" aria-current="page"
+                            href="#">Solicita tu turno</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 col-md-3 col-lg-3 col-sm-12">
+            <div class="card carta">
+                <div class="card-body">
+                    <h5 class="card-title"><img src="img/gamer.png" alt="" width="50" height="40"
+                            class="d-inline-block align-text-top me-1">Asesorate Con Nosotros</h5>
+                    <p class="card-text"> Nuestros supervisores estaran encantados de comunicarse con usted</p>
+                    <a href="#" class="btn btn-primary boton">Vamos!</a>
+                </div>
+    </section>
+    <section class="container caja2">
+        <div class="row ">
+        <div class="col-12 col-lg-6 col-md-6">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12 col-md-12 caracteristicas">
+                Beneficios para Nuestros usuarios
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-12 col-lg-4 col-md-4">
+                <p class="p-caja1"> <img class="icono-section2" src="img/lupa.png" alt="" width="50" height="54"><strong
+                        style="margin-left: 10px;">Según el plan que elijas</strong></p>
+                <p class="p-caja2">Cuota de manejo</p>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4">
+                <p class="p-caja1"> <img class="icono-section2" src="img/tesoro.png" alt="" width="50"
+                        height="54"><strong style="margin-left: 10px;">$0</strong></p>
+                <p class="p-caja2"> Monto de apertura</p>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-4 col-md-4">
+                <p class="p-caja1"> <img class="icono-section2" src="img/moneda.png" alt="" width="50"
+                        height="54"><strong style="margin-left: 10px;">$0</strong></p>
+                <p class="p-caja2">Saldo mínimo</p>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4">
+                <p class="p-caja1"> <img class="icono-section2" src="img/tarjeta.png" alt="" width="50"
+                        height="54"><strong style="margin-left: 10px;">Compra en el exterior</strong></p>
+                <p class="p-caja2">Con tu tarjeta débito</p>
+            </div>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col-12 col-lg-4 col-md-4">
+                <p class="p-caja1"> <img class="icono-section2" src="img/tarjeta2.png" alt="" width="50"
+                        height="54"><strong style="margin-left: 10px;">Gratis</strong></p>
+                <p class="p-caja2">Tu tarjeta a domicilio</p>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4">
+                <p class="p-caja1"> <img class="icono-section2" src="img/proteger.png" alt="" width="50"
+                        height="54"><strong style="margin-left: 10px;">Maxima Seguridad</strong></p>
+                <p class="p-caja2">Proteje tu cuenta</p>
+            </div>
+        </div>
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 bg-light">
+
+        </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
