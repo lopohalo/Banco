@@ -1,7 +1,224 @@
-.texto1 {
-    margin-left: 210px;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo:wght@700&family=Dancing+Script:wght@400;500&family=M+PLUS+Rounded+1c:wght@100&family=Ramaraja&family=Roboto:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Macondo+Swash+Caps&display=swap');
+
+
+body{
+    background: #f8f8fd;
+}
+.w-100 {
+    width: 98%!important;
+}
+.imagen-logo{
+    position: absolute;
+    width: 68px;
+    height: 54px;
+    margin-top: 20px;
+    padding-left: 17px;
+}
+.lateral-izquierdo{
+    min-height: 64px;
+    font: 700 56px 'CIBFont Sans';
+    line-height: 55px;
+    letter-spacing: -0.47px;
+    margin-bottom: 32px;
+}
+.lateral-izquierdo1{
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -.3px;
+    margin-bottom: 39px;
+}
+.titulo-chaco{
+    padding-left: 80px;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.listadoSlider{
+    margin-left: 190px;
+}
+.bg-dark {
+    background-color: #8c0f0f!important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
 }
 
-.caja2 {
-    padding-left: 97px;
+.letra-slider{
+    font-family: OpenSans-Regular;
+    margin-left: 60px;
+    font-size: 21px;
+
+}
+.container1{
+    background-color: #EBEDEF
+}
+.carrusel-texto{
+    color: black;
+    font-size: 35px;
+    font-family: 'Libre Baskerville', serif;
+}
+.parrafo-carrusel{
+    color: black;
+    font-size: 15px;
+    font-family: 'Libre Baskerville', serif;
+}
+.conocemos-1{
+    visibility: hidden;
+}
+.caja2{
+    padding-left: 62px;
+    background-color: #fbf2f6;
+    margin-top: -113px;
+}
+
+.caracteristicas{ 
+    font-family: "CIBFontSans-Light";
+    font-size: 2rem;
+    margin-right: -99px;
+}
+.p-caja2{
+    margin-left: -40px;
+    font-family: 'Libre Baskerville', serif;
+    cursor: pointer;
+    
+}
+.p-caja1{
+    margin-left: -26px;
+    padding-top: 17px;
+    font-family: OpenSans-Regular;
+    cursor: pointer;
+    font-size: 12px;
+}
+.icono-section2{
+    cursor: pointer;
+    margin-left: 24px;
+}
+.carta{
+    position: relative;
+    bottom: 520px;
+    opacity: 79%;
+    left: 345px;
+}
+
+.boton{
+    background: #fdda24;
+    color: black;
+    border: none;
+}
+.boton-banco{
+    width: 45%;
+    margin-top: -35px;
+}
+
+
+.carta:hover{
+    box-shadow: 0px 0px 5px 1px rgb(189, 168, 7);
+}
+
+.parrafo-derecha{
+    color: black;
+    font-family: OpenSans-Regular;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.imagen-derecha{
+    margin-left: 18px;
+    cursor: pointer;
+}
+.label-mejores{
+    min-height: 64px;
+    font: 700 20px 'CIBFont Sans';
+    line-height: 55px;
+    letter-spacing: -0.47px;
+    margin-left: 34px;
+}
+@media (min-width: 1px) and (max-width: 992px){
+    .imagen-logo {
+        position: relative;
+        margin-top: 0px;
+        max-width: 39px;
+        max-height: 39px;
+        left: 120px;
+    }
+    .listado:hover{
+        background-color: rgb(46, 95, 70);
+        width: 474px;
+    }
+    .listado{
+        padding-top:10px
+    }
+    .colapsador{
+        margin-top:17px !important;
+    }
+    
+    .imagen-logo{
+        padding-left: 0 !important;
+    }
+
+    .listadoSlider{
+        margin-left: 0px !important;
+    }
+
+    .letra-slider{
+        font-family: OpenSans-Regular;
+        margin-left: 0px !important;
+    }
+    .bg-dark {
+        background-color: #212529!important;
+    }
+    .conocenos-div{
+        visibility: hidden;
+        height: 40px;
+    }
+    .conocemos-1{
+        visibility: visible;
+        font-size: 24px;
+        position: relative;
+        top: 406px;
+        left: 53px;
+        color: rgb(5, 125, 121);
+        font-family: OpenSans-Regular;
+    }
+    .justify-content-center {
+        left: 105px !important;
+        top: -47px !important;
+    }
+    .caracteristicas{ 
+        font-family: 'Libre Baskerville', serif;
+        font-size: 30px;
+        margin-right: 34px !important;
+        margin-top: 40px;
+    }
+    .caja2{
+        padding-left: 145px;
+        margin-top: 55px !important;
+    }
+    .carta{
+        position:relative;
+        bottom: -31px !important;
+        opacity: 79%;
+        left:0 !important;
+    }
+    .icono-section2 {
+        cursor: pointer;
+        margin-left: -3px;
+    }
+    .carrusel-1{
+        background: #f8f8fd;
+    }
+    .contenedor-alternativas{
+        padding-top: 12px;
+        padding-left: 50px;
+        background-color: turquoise;
+        margin-top: 66px;
+    }
+    .p-caja1{
+        font-size: 15px;
+    }
 }
