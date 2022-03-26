@@ -144,7 +144,7 @@ body{
         margin-top: 0px;
         max-width: 39px;
         max-height: 39px;
-        left: 89px;
+        left: 61px;
     }
     .listado:hover{
         background-color: rgb(46, 95, 70);
@@ -181,7 +181,7 @@ body{
         font-size: 20px;
         position: relative;
         top: 428px;
-        left: 86px;
+        left: 37px;
         color: rgb(5, 125, 121);
         font-family: OpenSans-Regular;
     }
