@@ -144,7 +144,7 @@ body{
         margin-top: 0px;
         max-width: 39px;
         max-height: 39px;
-        left: 120px;
+        left: 89px;
     }
     .listado:hover{
         background-color: rgb(46, 95, 70);
@@ -178,10 +178,10 @@ body{
     }
     .conocemos-1{
         visibility: visible;
-        font-size: 24px;
+        font-size: 20px;
         position: relative;
-        top: 406px;
-        left: 53px;
+        top: 428px;
+        left: 86px;
         color: rgb(5, 125, 121);
         font-family: OpenSans-Regular;
     }
