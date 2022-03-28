@@ -230,5 +230,10 @@ body{
         position: static;
         width: 67%;
     }
+    .opciones:hover{
+            width: 81%;
+            background-color: brown;
+        
+    }
 
 }
