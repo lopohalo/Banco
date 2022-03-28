@@ -13,8 +13,8 @@ body{
     position: absolute;
     width: 68px;
     height: 54px;
-    margin-top: 20px;
     padding-left: 17px;
+    margin-top: 20px;
 }
 .lateral-izquierdo{
     min-height: 64px;
@@ -141,10 +141,10 @@ body{
 @media (min-width: 1px) and (max-width: 992px){
     .imagen-logo {
         position: relative;
-        margin-top: 0px;
+        margin-top: 0px !important;
         max-width: 39px;
         max-height: 39px;
-        left: 61px;
+        margin-left: 29px;
     }
     .listado:hover{
         background-color: rgb(46, 95, 70);
@@ -179,11 +179,9 @@ body{
     .conocemos-1{
         visibility: visible;
         font-size: 20px;
-        position: relative;
-        top: 428px;
-        left: 29px;
         color: rgb(5, 125, 121);
         font-family: OpenSans-Regular;
+        text-align: center;
     }
     .justify-content-center {
         left: 105px !important;
@@ -220,5 +218,8 @@ body{
     }
     .p-caja1{
         font-size: 15px;
+    }
+    .titulo-chaco{
+        padding-left: 0px !important;
     }
 }
