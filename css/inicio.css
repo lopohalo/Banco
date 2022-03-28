@@ -230,10 +230,5 @@ body{
         position: static;
         width: 67%;
     }
-    .opciones:hover{
-            width: 81%;
-            background-color: rgb(46, 95, 70);
-        
-    }
 
 }
