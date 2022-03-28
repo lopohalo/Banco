@@ -150,7 +150,7 @@ body{
     }
     .listado:hover{
         background-color: rgb(46, 95, 70);
-        width: 474px;
+        width: 100%px;
     }
     .listado{
         padding-top:10px
@@ -232,7 +232,7 @@ body{
     }
     .opciones:hover{
             width: 81%;
-            background-color: brown;
+            background-color: rgb(46, 95, 70);
         
     }
 
