@@ -74,8 +74,13 @@ body{
 .caja2{
     padding-left: 62px;
     background-color: #fbf2f6;
+    margin-top: 60px;
+}
+.caja23{
+    padding-left: 62px;
     margin-top: -113px;
 }
+
 
 .caracteristicas{ 
     font-family: "CIBFontSans-Light";
@@ -88,6 +93,7 @@ body{
     cursor: pointer;
     
 }
+
 .p-caja1{
     margin-left: -26px;
     padding-top: 17px;
@@ -136,6 +142,34 @@ body{
     font: 700 20px 'CIBFont Sans';
     line-height: 55px;
     letter-spacing: -0.47px;
+}
+.Asamblea{
+    font-family: BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 12px;
+    font-weight: 600;
+}
+.card-body1{
+    background-color: var(--outstandingopportunitycard-background--100,#f4f4f4);
+    padding: 24px;
+    height: 100%;
+}
+.card1{
+    border: none;
+    margin-bottom: 30px;
+}
+.subtitle1{
+    color: #626262;
+    padding-bottom: 32px;
+}
+
+.text-muted {
+    color: #121212 !important;
+}
+
+.conoce{
+    text-decoration: none;
 }
 @media (min-width: 1px) and (max-width: 992px){
     .imagen-logo {
@@ -195,6 +229,9 @@ body{
         padding-left: 102px;
         margin-top: 55px !important;
     }
+    .caja23{
+        margin-top: 55px !important;
+    }
     .carta{
         position:relative;
         bottom: -31px !important;
@@ -229,6 +266,13 @@ body{
     .navbar-nav .dropdown-menu {
         position: static;
         width: 67%;
+    }
+
+    .carrusel-texto{
+        font-size: 20px;
+    }
+    .parrafo-carrusel{
+        font-size: 10px;
     }
 
 }
