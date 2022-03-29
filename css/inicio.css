@@ -118,7 +118,6 @@ body{
     border: none;
 }
 .boton-banco{
-    width: 45%;
     margin-top: -35px;
 }
 
@@ -174,6 +173,22 @@ body{
 .conoce{
     text-decoration: none;
     color: #8c0f0f!important;
+}
+@media (min-width: 992px) and (max-width: 1499px){
+    .listadoSlider {
+        margin-left: 100px !important;
+    }
+    .carrusel-1{
+        padding-top: 167px !important;
+    }
+    .card1{
+        padding-left: 18px;
+        background: #f8f8fd;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px !important; 
+        padding-left: 0rem !important; 
+}
 }
 @media (min-width: 1px) and (max-width: 992px){
     .imagen-logo {
@@ -235,6 +250,7 @@ body{
     }
     .caja23{
         margin-top: 55px !important;
+        padding-left: 0 !important;
     }
     .carta{
         position:relative;
@@ -278,5 +294,10 @@ body{
     .parrafo-carrusel{
         font-size: 10px;
     }
-
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0rem !important; 
+        padding-left: 0rem !important; 
+}
 }
