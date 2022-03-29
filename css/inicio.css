@@ -181,6 +181,10 @@ body{
         padding-left: 18px;
         background: #f8f8fd;
     }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0rem !important; 
+        padding-left: 0rem !important; 
+}
 }
 @media (min-width: 1px) and (max-width: 992px){
     .imagen-logo {
