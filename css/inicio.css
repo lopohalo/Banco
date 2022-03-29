@@ -172,7 +172,7 @@ body{
 }
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
-        margin-left: 90px !important;
+        margin-left: 100px !important;
     }
     .carrusel-1{
         padding-top: 167px !important;
