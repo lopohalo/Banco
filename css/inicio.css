@@ -113,8 +113,8 @@ body{
 }
 
 .boton{
-    background: #fdda24;
-    color: black;
+    background-color: #8c0f0f;
+    color: white;
     border: none;
 }
 .boton-banco{
@@ -126,7 +126,10 @@ body{
 .carta:hover{
     box-shadow: 0px 0px 5px 1px rgb(189, 168, 7);
 }
-
+.btn-warning {
+    color: white;
+    background-color: #8c0f0f!important;
+}
 .parrafo-derecha{
     color: black;
     font-family: OpenSans-Regular;
@@ -170,6 +173,7 @@ body{
 
 .conoce{
     text-decoration: none;
+    color: #8c0f0f!important;
 }
 @media (min-width: 1px) and (max-width: 992px){
     .imagen-logo {
