@@ -174,12 +174,12 @@ body{
     .listadoSlider {
         margin-left: 70px !important;
     }
-    .contenedor-alternativas{
-        padding-top: 172px !important;
-        padding: 0;
+    .carrusel-1{
+        padding-top: 167px !important;
     }
     .card1{
-        padding: 24px;
+        padding-left: 18px;
+        background: #f8f8fd;
     }
 }
 @media (min-width: 1px) and (max-width: 992px){
@@ -286,6 +286,10 @@ body{
     .parrafo-carrusel{
         font-size: 10px;
     }
-    
-
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0rem !important; 
+        padding-left: 0rem !important; 
+}
 }
