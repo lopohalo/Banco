@@ -80,7 +80,7 @@ body{
     margin-top: 100px;
 }
 .caja4{
-    margin-top: 150px;
+    margin-top: 50px;
 }
 .caja23{
     margin-top: -113px;
@@ -205,6 +205,12 @@ body{
     opacity: .75;
     color: #8c0f0f!important;
     -webkit-font-smoothing: antialiased;
+}
+.p-oculta{
+    visibility: hidden;
+}
+.p-oculta1{
+    visibility: hidden;
 }
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
@@ -351,16 +357,25 @@ body{
         height: 30px !important;
         right: -7px !important;
     }
-    .clase-responsive{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-    }
     .ofertas-sub{
-        display:none;
-        overflow: hidden;
+        font-size: 10px;
+    }
+    .caja3 {
+        margin-top: 33px;
+    }
+    .display-oculto{
+        margin-top: 20px;
+    }
+    .p-oculta{
+        visibility: visible;
+        font-size: 13px;
+        color: #7e7e7e;
+    }
+    .p-oculta1 {
+        visibility: visible;
+        font-size: 13px;
+        color: #7e7e7e;
+        margin-left: -83px;
     }
 }
 @media (min-width: 992px){
