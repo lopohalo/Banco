@@ -241,7 +241,7 @@ body{
     }
     .listado:hover{
         background-color: rgb(46, 95, 70);
-        width: 100%px;
+        width: 100%;
     }
     .listado{
         padding-top:10px
