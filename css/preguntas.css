@@ -36,7 +36,9 @@
     font-size: 21px;
 
 }
-
+.listadoSlider{
+    margin-left: 190px;
+}
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
         margin-left: 100px !important;
@@ -78,7 +80,7 @@
 
     .listado:hover{
         background-color: rgb(46, 95, 70);
-        width: 100%px;
+        width: 100%;
     }
 
     .listado{
@@ -151,7 +153,7 @@
 }
 
 .iconos {
-    color:#000000
+    color: #8c0f0f!important;
 }
 
 
@@ -170,5 +172,3 @@
 .icono-imagen{
     text-decoration: none !important;
 }
-
- 
