@@ -13,7 +13,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid"><img src="" alt="" class="d-inline-block align-text-top imagen-logo">
+        <div class="container-fluid"><img src="img/escala.png" alt="" class="d-inline-block align-text-top imagen-logo">
             <a class="navbar-brand titulo-chaco" href="#">BancoChaco</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -30,20 +30,13 @@
                         <a class="nav-link letra-slider" href="#"><img src="img/empresas.png" alt="" width="30"
                                 height="24" class="d-inline-block align-text-top me-1">Empresas</a>
                     </li>
-                    <li class="nav-item dropdown listado">
-                        <a class="nav-link dropdown-toggle letra-slider" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><img src="img/eleccion.png" alt=""
-                                width="30" height="24" class="d-inline-block align-text-top me-1">
-                            Opciones
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
-                            <li><a class="dropdown-item" href="#">Contactanos</a></li>
-                        </ul>
+                    <li class="nav-item listado">
+                        <a class="nav-link  letra-slider" href="#"  aria-expanded="false"><img src="img/eleccion.png" alt=""
+                                width="30" height="24" class="d-inline-block align-text-top me-1"> Opciones</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2 barra" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
@@ -57,7 +50,7 @@
     </section>
     <section class="container container-2">
         <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-4 col-lg-4">
                 <div class="card carta1">
                     <div class="card-body">
                         <p class="card-text">Háblale ahora</p>
@@ -66,8 +59,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3"><img src="img/preguntas/imagenp.jpg" style="max-width: 350px;"alt=""></div>
-            <div class="col-5">
+            <div class="col-12 col-md-3 col-lg-3 ">
+                <img src="img/preguntas/imagenp.jpg" style="max-width: 350px;"alt="">
+            </div>
+            <div class="col-12 col-md-5 col-lg-5">
                 <ul class="d-flex flex-column">
                     <h6>Lo más consultado</h6>
                     <a class="preguntas" href=""><img src="img/preguntas/signo.png" alt="..." width="30" height="30">¿Cómo pido una certificación Bancaria en App BancoChaco?</a>
@@ -81,34 +76,42 @@
     <section class="container">
         <div class="row text-center">
             <div class="col-12 d-flex justify-content-center">
-                <h3>¿Aún tienes dudas?</h3>
+                <h3 class="caja3">¿Aún tienes dudas contactanos?</h3>
             </div>
-            <div class="col-1"></div>
-            <div class="col-2">
+            <div class="col-12 col-md-1 col-lg-1"></div>
+            <div class="col-6 col-md-2 col-lg-2">
                 <img src="img/preguntas/ubicacion.svg" alt="">
-                <p>Puntos de atención</p>
-                <a href="">Visítanos</a>
+                <p>Puntos de atención</p> <br>
+                <a class="iconos" href="">Visítanos</a>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-2 col-lg-2">
                 <img src="img/preguntas/chat.svg" alt="">
-                <p>Chat en línea</p>
-                <a href="">Escríbenos</a>
+                <p>Chat en línea</p> <br>
+                <a class="iconos" href="">Escríbenos</a>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-2 col-lg-2">
                 <img src="img/preguntas/celular.svg" alt="">
                 <p>Llámanos a <br> nuestra línea</p>
-                <a href="">018000 91 0090</a>
+                <a class="iconos" href="">018000 91 0090</a>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-2 col-lg-2">
                 <img src="img/preguntas/telefono.svg" alt="">
                 <p>Prefieres que te<br> llamemos</p>
-                <a href="">Cuando quieras</a>
+                <a class="iconos" href="">Cuando quieras</a>
             </div>
-            <div class="col-2">
+            <div class="col-12 col-md-2 col-lg-2">
                 <img src="img/preguntas/sonido.svg" alt="">
                 <p>Contáctanos por<br> redes sociales</p>
+                <a class="iconos icono-imagen" href="">
+                    <img src="img/preguntas/facebook.png" width="16" alt="">
+                    <img src="img/preguntas/twitter.png" width="16" alt="">
+                    <img src="img/preguntas/whatsapp.png" width="16" alt="">
+                </a>
             </div>
-            <div class="col-1"></div>
+            <div class="col-12 col-md-1 col-lg-1"></div>
+            <div class="espacio" >
+                <a class="texto-1" href="">Conoce todas las líneas telefónicas <img src="img/preguntas/flecha.png" width="20" alt=""> </a>
+            </div>
         </div>
     </section>
 
