@@ -33,6 +33,9 @@
     font-size: 21px;
 
 }
+.listadoSlider {
+    margin-left: 190px;
+}
 .slick-prev {
     width: 50px !important;
     height: 50px !important;
