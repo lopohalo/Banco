@@ -49,20 +49,31 @@
     </div>
   </nav>
 
+<section class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="your-class fondo">
+        <div>
+          <h2 class="titulocarrusel1" >Conecta con diferentes empresas en el<img src="img/empresas_img/tierra.png" width="30" alt="">con nosotros</h2>
+          <button class="botoncarrusel1">conoce más</button>
+        </div>
+        <div><img class="imagen-carrusel1" src="img/empresas_img/carrusel.jpg" alt=""></div>
+        <div>your content</div>
+        <div>your content</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
   <div class="container">
     <div class="row">
-
-
-
-
-
-
-
-
-
-
-
-
       <div class="col-4">
         <div class="card" style="width: 18rem;">
           <img src="img/cards/pagar-impuesto-dian-scotiabank-colpatria.webp" class="card-img-top" alt="...">
@@ -259,22 +270,20 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
-      <script>
-        $('.carrusel-raro').slick({
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            autoplay: true,
-            autoplaySpeed: 2000,
-        });
-    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$('.your-class').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+});
+</script>
 </body>
 
 </html>
