@@ -170,6 +170,18 @@ body{
 .conoce{
     text-decoration: none;
 }
+@media (min-width: 992px) and (max-width: 1499px){
+    .listadoSlider {
+        margin-left: 70px !important;
+    }
+    .contenedor-alternativas{
+        padding-top: 172px !important;
+        padding: 0;
+    }
+    .card1{
+        padding: 24px;
+    }
+}
 @media (min-width: 1px) and (max-width: 992px){
     .imagen-logo {
         position: relative;
@@ -230,6 +242,7 @@ body{
     }
     .caja23{
         margin-top: 55px !important;
+        padding-left: 0 !important;
     }
     .carta{
         position:relative;
@@ -273,5 +286,6 @@ body{
     .parrafo-carrusel{
         font-size: 10px;
     }
+    
 
 }
