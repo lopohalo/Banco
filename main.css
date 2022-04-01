@@ -49,6 +49,9 @@
     color: #8c0f0f!important;
     -webkit-font-smoothing: antialiased;
 }
+.imagen-carrusel1{
+    width: 88%;
+}
 
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
@@ -129,6 +132,9 @@
     .bg-dark {
         background-color: #212529!important;
     }
+    .imagen-carrusel1{
+        width: 100%;
+    }
     .slick-next:before, .slick-prev:before {
         font-size: 30px !important;
     }
@@ -147,6 +153,9 @@
     }
     .fondo{
         background: transparent !important;
+    }
+    .imagen-empresarial{
+        max-width:80%;
     }
 } 
 
@@ -192,9 +201,7 @@ background-color: #00ffff;
 .cajanumero1{
     margin-top: 50px;
 }
-.imagen-carrusel1{
-    width: 88%;
-}
+
 .titulocarrusel1{
     font-size:2.3rem
 }
