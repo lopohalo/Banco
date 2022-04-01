@@ -218,10 +218,16 @@ body{
     width: 100%;
     border-radius: 10%;
     background-color:  #e3e3f5;
+    font-size: 1.5rem;
 }
 .btn-clc1{
     margin-bottom: 2px;
     width: 100%;
+    background-color: black;
+    color: white;
+}
+.btn-clc1:hover{
+    box-shadow: 0px 0px 1px 1px #8c0f0f;
 }
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {

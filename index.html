@@ -73,7 +73,7 @@
                     <div class="col-4"><button type="button" onclick="pad_numerico(8)" class="btn-clc1">8</button></div>
                     <div class="col-4"><button type="button" onclick="pad_numerico(9)" class="btn-clc1">9</button></div>
                     <div class="col-12"><button type="button" onclick="pad_numerico(0)" class="btn-clc1">0</button></div>
-                    <div class="col-12"><button type="button" onclick="pad_numerico('ok')" class="btn-clc2">Cotiza el Monto</button></div>
+                    <div class="col-12"><button type="button" onclick="pad_numerico('ok')" class="btn-clc2" style="margin-top: 20px;">Cotiza el Monto</button></div>
                     </div>    
                 </div>
             </div>|
@@ -538,49 +538,7 @@
             dots: true,
         });
     </script>
-    <script>
-        function pad_numerico(dato) {
-            let input_pad = document.querySelector("#casilla_pad")
-
-
-            if (dato == "ok") {
-                Swal.fire({
-                    title: '<strong>Datos del credito</u></strong>',
-                    icon: 'info',
-                    html:
-                        `
-                <button class="btn btn-dark" onclick="calcular_venta_diblo(6)" id="1">6</button>
-                <button class="btn btn-dark" id="2">12</button>
-                <button class="btn btn-dark" id="3">18</button>
-                <button class="btn btn-dark" id="4">24</button>
-                `,
-                    showCloseButton: true,
-                    showCancelButton: true,
-                    focusConfirm: false,
-                    confirmButtonText:
-                        '<i class="fa fa-thumbs-up"></i> Great!',
-                    confirmButtonAriaLabel: 'Thumbs up, great!',
-                    cancelButtonText:
-                        '<i class="fa fa-thumbs-down"></i>',
-                    cancelButtonAriaLabel: 'Thumbs down'
-                })
-            } else {
-                input_pad.value += dato
-            }
-
-        }
-
-        function calcular_venta_diblo(cuotas) {
-            let valor_prestamo = document.querySelector("#casilla_pad").value
-            valor_prestamo = parseInt(valor_prestamo)
-            cuotas = parseInt(cuotas)
-            switch (cuotas) {
-                case 6:
-                    console.log(valor_prestamo / cuotas)
-                    break;
-            }
-        }
-    </script>
+    <script src="calculadora.js"></script>
 </body>
 
 </html>
