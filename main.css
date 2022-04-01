@@ -52,6 +52,22 @@
 .imagen-carrusel1{
     width: 88%;
 }
+.botoncarrusel1 {
+    border-radius: 50px;
+    color: #292929;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.38px;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    background-color: #FDDA24;
+    margin-top: 50px;
+    border: none;
+    height: 50px;
+    width: 150px;
+}
 
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
@@ -157,6 +173,9 @@
     .imagen-empresarial{
         max-width:80%;
     }
+    .botoncarrusel1 {
+        margin-top: 10px ;
+    }
 } 
 
 @media (min-width: 992px){
@@ -168,24 +187,6 @@
 
 .carta4{
 background-color: #00ffff;
-}
-
-
-.botoncarrusel1 {
-    border-radius: 50px;
-    color: #292929;
-    font-family: Open Sans;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: -0.38px;
-    text-align: center;
-    text-decoration: none!important;
-    text-transform: uppercase;
-    background-color: #FDDA24;
-    margin-top: 50px;
-    border: none;
-    height: 50px;
-    width: 150px;
 }
 
 .botoncarrusel1:hover {
