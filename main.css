@@ -1,3 +1,23 @@
 .carta6{
 background-color: aqua;
 }
+
+body {
+    min-height: 100vh;
+    background-color: var(--color_grey2);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.input {
+    display: block;
+    width: 100%;
+    background-color: var(--color_grey2);
+    border: 1px solid var(--color_grey);
+    border-radius: 3px;
+    outline: none;
+    padding: 8px;
+    color: var(--color_grey);
+    font-size: 0.75rem;
+}
