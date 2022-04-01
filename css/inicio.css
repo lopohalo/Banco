@@ -221,7 +221,7 @@ body{
 }
 .btn-clc1{
     margin-bottom: 2px;
-    width: 7rem;
+    width: 100%;
 }
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
