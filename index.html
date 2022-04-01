@@ -34,12 +34,13 @@
                                 alt="" width="30" height="24" class="d-inline-block align-text-top me-1">Inicio</a>
                     </li>
                     <li class="nav-item listado">
-                        <a class="nav-link letra-slider" href="index_empresas.html"><img src="img/empresas.png" alt="" width="30"
-                                height="24" class="d-inline-block align-text-top me-1">Empresas</a>
+                        <a class="nav-link letra-slider" href="index_empresas.html"><img src="img/empresas.png" alt=""
+                                width="30" height="24" class="d-inline-block align-text-top me-1">Empresas</a>
                     </li>
                     <li class="nav-item listado">
-                        <a class="nav-link  letra-slider" href="preguntas.html" aria-expanded="false"><img src="img/eleccion.png"
-                                alt="" width="30" height="24" class="d-inline-block align-text-top me-1"> Opciones</a>
+                        <a class="nav-link  letra-slider" href="preguntas.html" aria-expanded="false"><img
+                                src="img/eleccion.png" alt="" width="30" height="24"
+                                class="d-inline-block align-text-top me-1"> Opciones</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -143,9 +144,9 @@
                             class="d-inline-block align-text-top imagen-derecha"><a
                             class="nav-link active parrafo-derecha" aria-current="page" href="#">Centro de Ayuda</a>
                     </div>
-                    <div class="col-4 col-lg-6 col-md-6"><img src="img/sonreir.png" alt="" width="53" height="40"
+                    <div class="col-4 col-lg-6 col-md-6 bg-warning"><img src="img/sonreir.png" alt="" width="53" height="40"
                             class="d-inline-block align-text-top imagen-derecha"><a
-                            class="nav-link active parrafo-derecha" aria-current="page" href="#">Solicita tu turno</a>
+                            class="nav-link active parrafo-derecha" aria-current="page" href="#">Solicita tu credito</a>
                     </div>
                 </div>
             </div>
@@ -434,7 +435,7 @@
             <div class="col-12 col-lg-3 col-md-3">
                 <div class="card">
                     <img src="img/carrusel/basico.jpg" class="card-img-top" alt="...">
-                    <div class="card-body" style="background-color: tomato;" >
+                    <div class="card-body" style="background-color: tomato;">
                         <h5 class="card-title">Plan Basico</h5>
                         <p class="card-text">Cuota de manejo</p>
                         <p>$6,495 mes</p>
@@ -459,7 +460,7 @@
             <div class="col-12 col-lg-3 col-md-3">
                 <div class="card">
                     <img src="img/carrusel/nomina.jpg" class="card-img-top" alt="...">
-                    <div class="card-body " style="background-color: yellow;" >
+                    <div class="card-body " style="background-color: yellow;">
                         <h5 class="card-title">Plan Nómina</h5>
                         <p class="card-text">Cuota de manejo</p>
                         <p>Desde $0 mes</p>
@@ -484,6 +485,28 @@
             </div>
         </div>
     </section>
+    <div class="container">
+        <input type="text" readonly id="casilla_pad">
+        <div>
+            <button type="button" onclick="pad_numerico(1)" class="btn-clc1">1</button>
+            <button type="button" onclick="pad_numerico(2)" class="btn-clc2">2</button>
+            <button type="button" onclick="pad_numerico(3)" class="btn-clc3">3</button>
+            <button type="button" onclick="pad_numerico(4)" class="btn-clc4">4</button>
+            <button type="button" onclick="pad_numerico(5)" class="btn-clc5">5</button>
+            <button type="button" onclick="pad_numerico(6)" class="btn-clc6">6</button>
+            <button type="button" onclick="pad_numerico(7)" class="btn-clc7">7</button>
+            <button type="button" onclick="pad_numerico(8)" class="btn-clc8">8</button>
+            <button type="button" onclick="pad_numerico(9)" class="btn-clc9">9</button>
+            <button type="button" onclick="pad_numerico(0)" class="btn-clc10">0</button>
+            <button type="button" onclick="pad_numerico('ok')" class="btn-clc11">Solicitar creditp</button>
+        </div>
+
+        
+
+    </div>
+
+    
+
     </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -494,6 +517,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         $('.carrusel-raro').slick({
             slidesToShow: 2,
@@ -502,6 +526,49 @@
             autoplaySpeed: 2000,
             dots: true,
         });
+    </script>
+    <script>
+        function pad_numerico(dato) {
+            let input_pad = document.querySelector("#casilla_pad")
+            
+
+            if (dato == "ok") {
+                Swal.fire({
+                    title: '<strong>Datos del credito</u></strong>',
+                    icon: 'info',
+                    html:
+                `
+                <button class="btn btn-dark" onclick="calcular_venta_diblo(6)" id="1">6</button>
+                <button class="btn btn-dark" id="2">12</button>
+                <button class="btn btn-dark" id="3">18</button>
+                <button class="btn btn-dark" id="4">24</button>
+                `,
+                    showCloseButton: true,
+                    showCancelButton: true,
+                    focusConfirm: false,
+                    confirmButtonText:
+                        '<i class="fa fa-thumbs-up"></i> Great!',
+                    confirmButtonAriaLabel: 'Thumbs up, great!',
+                    cancelButtonText:
+                        '<i class="fa fa-thumbs-down"></i>',
+                    cancelButtonAriaLabel: 'Thumbs down'
+                })
+            }else{
+                input_pad.value += dato
+            }
+
+        }
+
+        function calcular_venta_diblo(cuotas) {
+            let valor_prestamo = document.querySelector("#casilla_pad").value
+            valor_prestamo = parseInt(valor_prestamo)
+            cuotas = parseInt(cuotas)
+            switch (cuotas) {
+                case 6:
+                    console.log(valor_prestamo / cuotas)
+                    break;
+            }
+        }
     </script>
 </body>
 
