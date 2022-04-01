@@ -211,6 +211,18 @@ body{
 .p-oculta1{
     visibility: hidden;
 }
+.input-valores{
+    margin-bottom: 30px;
+}
+.input-valores1{
+    width: 100%;
+    border-radius: 10%;
+    background-color:  #e3e3f5;
+}
+.btn-clc1{
+    margin-bottom: 2px;
+    width: 7rem;
+}
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
         margin-left: 100px !important;

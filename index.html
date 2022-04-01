@@ -50,6 +50,35 @@
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between  bg-white py-2">
+                        <h3>Solicita tu Credito</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-12 input-valores">
+                    <input type="text" class="input-valores1" readonly id="casilla_pad">
+                    </div>
+                    <div class="col-4"><button type="button" onclick="pad_numerico(1)" class="btn-clc1">1</button></div>
+                    <div class="col-4"><button type="button" onclick="pad_numerico(2)" class="btn-clc1">2</button></div>
+                    <div class="col-4"><button type="button" onclick="pad_numerico(3)" class="btn-clc1">3</button></div>
+                    <div class="col-4"><button type="button" onclick="pad_numerico(4)" class="btn-clc1">4</button></div>
+                    <div class="col-4"><button type="button" onclick="pad_numerico(5)" class="btn-clc1">5</button></div>
+                    <div class="col-4"><button type="button" onclick="pad_numerico(6)" class="btn-clc1">6</button></div>
+                    <div class="col-4"><button type="button" onclick="pad_numerico(7)" class="btn-clc1">7</button></div>
+                    <div class="col-4"><button type="button" onclick="pad_numerico(8)" class="btn-clc1">8</button></div>
+                    <div class="col-4"><button type="button" onclick="pad_numerico(9)" class="btn-clc1">9</button></div>
+                    <div class="col-12"><button type="button" onclick="pad_numerico(0)" class="btn-clc1">0</button></div>
+                    <div class="col-12"><button type="button" onclick="pad_numerico('ok')" class="btn-clc2">Cotiza el Monto</button></div>
+                    </div>    
+                </div>
+            </div>|
+        </div>
+    </div>
     <section class="container">
         <div class="row justify-content-center"
             style=" background-color: #f3f3f3; margin-top: 50px; padding-bottom: 39px;">
@@ -144,9 +173,10 @@
                             class="d-inline-block align-text-top imagen-derecha"><a
                             class="nav-link active parrafo-derecha" aria-current="page" href="#">Centro de Ayuda</a>
                     </div>
-                    <div class="col-4 col-lg-6 col-md-6 bg-warning"><img src="img/sonreir.png" alt="" width="53" height="40"
-                            class="d-inline-block align-text-top imagen-derecha"><a
-                            class="nav-link active parrafo-derecha" aria-current="page" href="#">Solicita tu credito</a>
+                    <div class="col-4 col-lg-6 col-md-6 bg-warning"><img src="img/sonreir.png" alt="" width="53"
+                            height="40" class="d-inline-block align-text-top imagen-derecha"><a
+                            class="nav-link active parrafo-derecha" data-bs-toggle="modal"
+                            data-bs-target="#exampleModa2" aria-current="page" href="#">Solicita tu credito</a>
                     </div>
                 </div>
             </div>
@@ -485,27 +515,8 @@
             </div>
         </div>
     </section>
-    <div class="container">
-        <input type="text" readonly id="casilla_pad">
-        <div>
-            <button type="button" onclick="pad_numerico(1)" class="btn-clc1">1</button>
-            <button type="button" onclick="pad_numerico(2)" class="btn-clc2">2</button>
-            <button type="button" onclick="pad_numerico(3)" class="btn-clc3">3</button>
-            <button type="button" onclick="pad_numerico(4)" class="btn-clc4">4</button>
-            <button type="button" onclick="pad_numerico(5)" class="btn-clc5">5</button>
-            <button type="button" onclick="pad_numerico(6)" class="btn-clc6">6</button>
-            <button type="button" onclick="pad_numerico(7)" class="btn-clc7">7</button>
-            <button type="button" onclick="pad_numerico(8)" class="btn-clc8">8</button>
-            <button type="button" onclick="pad_numerico(9)" class="btn-clc9">9</button>
-            <button type="button" onclick="pad_numerico(0)" class="btn-clc10">0</button>
-            <button type="button" onclick="pad_numerico('ok')" class="btn-clc11">Solicitar creditp</button>
-        </div>
 
-        
 
-    </div>
-
-    
 
     </div>
     </div>
@@ -517,7 +528,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         $('.carrusel-raro').slick({
             slidesToShow: 2,
@@ -530,14 +541,14 @@
     <script>
         function pad_numerico(dato) {
             let input_pad = document.querySelector("#casilla_pad")
-            
+
 
             if (dato == "ok") {
                 Swal.fire({
                     title: '<strong>Datos del credito</u></strong>',
                     icon: 'info',
                     html:
-                `
+                        `
                 <button class="btn btn-dark" onclick="calcular_venta_diblo(6)" id="1">6</button>
                 <button class="btn btn-dark" id="2">12</button>
                 <button class="btn btn-dark" id="3">18</button>
@@ -553,7 +564,7 @@
                         '<i class="fa fa-thumbs-down"></i>',
                     cancelButtonAriaLabel: 'Thumbs down'
                 })
-            }else{
+            } else {
                 input_pad.value += dato
             }
 
