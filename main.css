@@ -176,6 +176,9 @@
     .botoncarrusel1 {
         margin-top: 10px ;
     }
+    .la-tierra{
+        width: 5% !important;
+    }
 } 
 
 @media (min-width: 992px){
