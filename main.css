@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .carta6{
 background-color: aqua;
 }
@@ -21,3 +22,372 @@ body {
     color: var(--color_grey);
     font-size: 0.75rem;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo:wght@700&family=Dancing+Script:wght@400;500&family=M+PLUS+Rounded+1c:wght@100&family=Ramaraja&family=Roboto:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Macondo+Swash+Caps&display=swap');
+
+.imagen-logo{
+    position: absolute;
+    width: 68px;
+    height: 54px;
+    padding-left: 17px;
+    margin-top: 20px;
+}
+
+.titulo-chaco{
+    padding-left: 80px;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.bg-dark {
+    background-color: #8c0f0f!important;
+}
+
+.letra-slider{
+    font-family: OpenSans-Regular;
+    margin-left: 60px;
+    font-size: 21px;
+
+}
+.listadoSlider {
+    margin-left: 190px;
+}
+.slick-prev {
+    width: 50px !important;
+    height: 50px !important;
+    margin-left: -40px !important;
+}
+.slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 80px !important;
+    line-height: 1;
+    opacity: .75;
+    color: #8c0f0f!important;
+    -webkit-font-smoothing: antialiased;
+}
+.imagen-carrusel1{
+    width: 88%;
+}
+.botoncarrusel1 {
+    border-radius: 50px;
+    color: #292929;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.38px;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    background-color: #FDDA24;
+    margin-top: 50px;
+    border: none;
+    height: 50px;
+    width: 150px;
+}
+
+.footer1 {
+    margin-top: 100px;
+}
+
+.iconos1 {
+    margin-right: 10px;
+}
+
+.icono-imagen{
+    text-decoration: none !important;
+}
+
+.iconos-2 {
+    margin-bottom: 25px;
+}
+
+@media (min-width: 992px) and (max-width: 1499px){
+    .listadoSlider {
+        margin-left: 100px !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px !important; 
+        padding-left: 0rem !important; 
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 200px !important;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1499px){
+    .listadoSlider {
+        margin-left: 100px !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px !important; 
+        padding-left: 0rem !important; 
+}
+}
+
+@media (min-width: 1px) and (max-width: 992px){
+    .carta1 {
+        width: 100% !important;
+    }
+
+    .imagen-centro {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenido3 {
+        margin-left: -15px;
+    }
+    
+    /*de aqui para abajo es lo de la navar */
+
+    .titulo-chaco {
+        padding-left: 0px !important;
+    }
+
+    .imagen-logo {
+        position: relative;
+        margin-top: 0px !important;
+        max-width: 39px;
+        max-height: 39px;
+        margin-left: 29px;
+    }
+
+    .listado:hover{
+        background-color: rgb(46, 95, 70);
+        width: 100%;
+    }
+
+    .listado{
+        padding-top:10px
+    }
+
+    .colapsador{
+        margin-top:17px !important;
+    }
+
+    .imagen-logo{
+        padding-left: 0 !important;
+    }
+
+    .listadoSlider{
+        margin-left: 0px !important;
+    }
+
+    .letra-slider{
+        font-family: OpenSans-Regular;
+        margin-left: 0px !important;
+    }
+
+    .bg-dark {
+        background-color: #212529!important;
+    }
+    .imagen-carrusel1{
+        width: 100%;
+    }
+    .slick-next:before, .slick-prev:before {
+        font-size: 30px !important;
+    }
+    .slick-prev {
+        width: 30px !important;
+        height: 30px !important;
+        margin-left: 20px !important;
+    }
+    .slick-next {
+        width: 30px !important;
+        height: 30px !important;
+        right: -7px !important;
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: 200px !important;
+    }
+    .fondo{
+        background: transparent !important;
+    }
+    .imagen-empresarial{
+        max-width:80%;
+    }
+    .botoncarrusel1 {
+        margin-top: 10px ;
+    }
+    .la-tierra{
+        width: 5% !important;
+    }
+} 
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 0rem !important; 
+            padding-left: 0rem !important; 
+    }
+    }
+
+.carta4{
+background-color: #00ffff;
+}
+
+.botoncarrusel1:hover {
+    background-color: #8c0f0f;
+    color: #ffffff;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.cajanumero2{
+    padding: 24px;
+    margin-top: 50px;
+}
+.cajanumero1{
+    margin-top: 50px;
+}
+
+.titulocarrusel1{
+    font-size:2.3rem
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 50%;
+}
+.fondo {
+    background-color: #F4F4F4;
+}
+
+.imagenes {
+    margin-top: 50px;
+}
+
+.carta1 {
+    background-color: #f5b6cd;
+}
+
+.boton-1 {
+    border-radius: 50px;
+    color: #292929;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.38px;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    background-color: #f5b6cd;
+    margin-top: 50px;
+    border: 1px solid;
+    height: 40px;
+    width: 120px;
+}
+
+.carta2 {
+    background-color: #00c389;
+}
+
+.boton-2 {
+    border-radius: 50px;
+    color: #292929;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.38px;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    background-color: #00c389;
+    margin-top: 23px;
+    border: 1px solid;
+    height: 40px;
+    width: 120px;
+}
+
+.carta3 {
+    background-color: #fdda24;
+}
+
+.boton-3 {
+    border-radius: 50px;
+    color: #292929;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.38px;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    background-color: #fdda24;
+    margin-top: 46px;
+    border: 1px solid;
+    height: 40px;
+    width: 120px;
+}
+
+.cartas {
+    margin-top: 50px;
+}
+
+.pet {
+    margin-top: 50px;
+}
+
+.empresas-t {
+    color: #112c60;
+    margin-top: 50px;
+}
+
+.imagen-tendencia {
+    max-width: 100%;
+}
+
+.boton-4 {
+    border-radius: 50px;
+    color: #292929;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.38px;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    background-color: #00ffff;
+    margin-top: 35px;
+    border: 1px solid;
+    height: 40px;
+    width: 120px;
+}
+
+.carta5 {
+    background-color: #ba55d3;
+}
+
+.boton-5 {
+    border-radius: 50px;
+    color: #292929;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.38px;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    background-color: #ba55d3;
+    margin-top: 34px;
+    border: 1px solid;
+    height: 40px;
+    width: 120px;
+}
+
+.espacio {
+    margin-top: 50px;
+}
+@media (min-width: 992px) and (max-width: 1499px){
+        .boton-3 {
+            margin-top: 22px;
+        }
+        .boton-5 {
+            margin-top: 60px;
+        }
+    }
+>>>>>>> master

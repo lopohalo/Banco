@@ -76,8 +76,13 @@ body{
     background-color: #fbf2f6;
     margin-top: 60px;
 }
+.caja3{
+    margin-top: 100px;
+}
+.caja4{
+    margin-top: 50px;
+}
 .caja23{
-    padding-left: 62px;
     margin-top: -113px;
 }
 
@@ -85,7 +90,6 @@ body{
 .caracteristicas{ 
     font-family: "CIBFontSans-Light";
     font-size: 2rem;
-    margin-right: -99px;
 }
 .p-caja2{
     margin-left: -40px;
@@ -113,19 +117,27 @@ body{
 }
 
 .boton{
-    background: #fdda24;
-    color: black;
+    background-color: #8c0f0f;
+    color: white;
     border: none;
 }
 .boton-banco{
     margin-top: -35px;
 }
 
-
-.carta:hover{
-    box-shadow: 0px 0px 5px 1px rgb(189, 168, 7);
+.imagen-carta{
+    width: 100%;
+    height: 361px;
 }
 
+
+.carta:hover{
+    box-shadow: 0px 0px 5px 1px #8c0f0f;
+}
+.btn-warning {
+    color: white;
+    background-color: #8c0f0f!important;
+}
 .parrafo-derecha{
     color: black;
     font-family: OpenSans-Regular;
@@ -133,7 +145,6 @@ body{
     cursor: pointer;
 }
 .imagen-derecha{
-    margin-left: 18px;
     cursor: pointer;
 }
 .label-mejores{
@@ -169,18 +180,87 @@ body{
 
 .conoce{
     text-decoration: none;
+    color: #8c0f0f!important;
 }
+.ofertas{
+    font-size: 19px;
+}
+.ofertas-sub{
+    font-size: 15px;
+}
+.la-a{
+    text-decoration: underline;
+    color: black;
+}
+.slick-prev {
+    width: 50px !important;
+    height: 50px !important;
+    margin-left: -40px !important;
+}
+.slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 80px !important;
+    line-height: 1;
+    opacity: .75;
+    color: #8c0f0f!important;
+    -webkit-font-smoothing: antialiased;
+}
+.p-oculta{
+    visibility: hidden;
+}
+.p-oculta1{
+    visibility: hidden;
+}
+.input-valores{
+    margin-bottom: 30px;
+}
+.input-valores1{
+    width: 95%;
+    border-radius: 10%;
+    background-color:  #e3e3f5;
+    font-size: 1.5rem;
+}
+.btn-clc1{
+    margin-bottom: 2px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.btn-clc1:hover{
+    box-shadow: 0px 0px 1px 1px #8c0f0f;
+}
+
+.footer3 {
+    margin-top: 100px;
+}
+
+.icono-imagen{
+    text-decoration: none !important;
+}
+
+.iconos1 {
+    margin-right: 10px;
+}
+
+.iconos-2 {
+    margin-bottom: 25px;
+}
+
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
-        margin-left: 70px !important;
+        margin-left: 100px !important;
     }
-    .contenedor-alternativas{
-        padding-top: 172px !important;
-        padding: 0;
+    .carrusel-1{
+        padding-top: 167px !important;
     }
     .card1{
-        padding: 24px;
+        padding-left: 18px;
+        background: #f8f8fd;
     }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px !important; 
+        padding-left: 0rem !important; 
+}
 }
 @media (min-width: 1px) and (max-width: 992px){
     .imagen-logo {
@@ -242,7 +322,7 @@ body{
     }
     .caja23{
         margin-top: 55px !important;
-        padding-left: 0 !important;
+        padding-left: 13px !important;
     }
     .carta{
         position:relative;
@@ -286,6 +366,55 @@ body{
     .parrafo-carrusel{
         font-size: 10px;
     }
-    
-
+    .carta-enorme{
+        margin-bottom: 59px;
+    }
+    .card1:hover{
+        box-shadow: 0px 0px 5px 1px #8c0f0f;
+    }
+    .row-iconos{
+        text-align: start !important;
+    }
+    .imagenes-carrusel{
+        max-width: 80px;
+    }
+    .slick-next:before, .slick-prev:before {
+        font-size: 34px !important;
+    }
+    .slick-prev {
+        width: 30px !important;
+        height: 30px !important;
+        margin-left: 20px !important;
+    }
+    .slick-next {
+        width: 30px !important;
+        height: 30px !important;
+        right: -7px !important;
+    }
+    .ofertas-sub{
+        font-size: 10px;
+    }
+    .caja3 {
+        margin-top: 33px;
+    }
+    .display-oculto{
+        margin-top: 20px;
+    }
+    .p-oculta{
+        visibility: visible;
+        font-size: 13px;
+        color: #7e7e7e;
+    }
+    .p-oculta1 {
+        visibility: visible;
+        font-size: 13px;
+        color: #7e7e7e;
+        margin-left: -83px;
+    }
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0rem !important; 
+        padding-left: 0rem !important; 
+}
 }

@@ -10,6 +10,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/icono-banco.png" type="image/x-icon">
     <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -28,35 +34,68 @@
                                 alt="" width="30" height="24" class="d-inline-block align-text-top me-1">Inicio</a>
                     </li>
                     <li class="nav-item listado">
-                        <a class="nav-link letra-slider" href="#"><img src="img/empresas.png" alt="" width="30"
-                                height="24" class="d-inline-block align-text-top me-1">Empresas</a>
+                        <a class="nav-link letra-slider" href="index_empresas.html"><img src="img/empresas.png" alt=""
+                                width="30" height="24" class="d-inline-block align-text-top me-1">Empresas</a>
                     </li>
-                    <li class="nav-item dropdown listado">
-                        <a class="nav-link dropdown-toggle letra-slider" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><img src="img/eleccion.png" alt=""
-                                width="30" height="24" class="d-inline-block align-text-top me-1">
-                            Opciones
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
-                            <li><a class="dropdown-item" href="#">Contactanos</a></li>
-                        </ul>
+                    <li class="nav-item listado">
+                        <a class="nav-link  letra-slider" href="preguntas.html" aria-expanded="false"><img
+                                src="img/eleccion.png" alt="" width="30" height="24"
+                                class="d-inline-block align-text-top me-1"> Opciones</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2 barra" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between  bg-white py-2">
+                        <h3>Solicita tu Credito</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-12 input-valores">
+                            <input type="text" class="input-valores1" readonly id="casilla_pad">
+                        </div>
+                        <div class="col-4"><button type="button" onclick="pad_numerico(1)" class="btn-clc1">1</button>
+                        </div>
+                        <div class="col-4"><button type="button" onclick="pad_numerico(2)" class="btn-clc1">2</button>
+                        </div>
+                        <div class="col-4"><button type="button" onclick="pad_numerico(3)" class="btn-clc1">3</button>
+                        </div>
+                        <div class="col-4"><button type="button" onclick="pad_numerico(4)" class="btn-clc1">4</button>
+                        </div>
+                        <div class="col-4"><button type="button" onclick="pad_numerico(5)" class="btn-clc1">5</button>
+                        </div>
+                        <div class="col-4"><button type="button" onclick="pad_numerico(6)" class="btn-clc1">6</button>
+                        </div>
+                        <div class="col-4"><button type="button" onclick="pad_numerico(7)" class="btn-clc1">7</button>
+                        </div>
+                        <div class="col-4"><button type="button" onclick="pad_numerico(8)" class="btn-clc1">8</button>
+                        </div>
+                        <div class="col-4"><button type="button" onclick="pad_numerico(9)" class="btn-clc1">9</button>
+                        </div>
+                        <div class="col-12"><button type="button" onclick="pad_numerico(0)" class="btn-clc1">0</button>
+                        </div>
+                        <div class="col-12"><button type="button" onclick="pad_numerico('ok')" class="btn-clc2"
+                                style="margin-top: 20px;">Cotiza el Monto</button></div>
+                    </div>
+                </div>
+            </div>|
+        </div>
+    </div>
     <section class="container">
         <div class="row justify-content-center"
             style=" background-color: #f3f3f3; margin-top: 50px; padding-bottom: 39px;">
             <div class="col-12" style="background: #f8f8fd; padding-bottom: 20px;">
                 <h2 class="conocenos conocemos-1">¡Animate a crear tu cuenta de ahorros!</h2>
             </div>
-
             <div class="col-12 col-lg-3 col-md-3" style="background-color: thistle;">
                 <label style="margin-top: 20px"><img src="img/dar-dinero.png" alt="" width="30" height="24"
                         class="d-inline-block align-text-top me-1" style="margin-bottom: 20px;">Medios de pago
@@ -69,18 +108,17 @@
                 </p>
                 <button type="button" class="btn btn-warning boton-banco">Conócelas aquí</button>
             </div>
-
             <div class="col-12 col-lg-6 col-md-6 carrusel-1"
                 style="padding: 0;  padding-top: 75px;  background: #f8f8fd;">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" style="background-color: yellow;"
+                        <button type="button" style="background-color: #8c0f0f"
                             data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" style="background-color: yellow;"
+                        <button type="button" style="background-color: #8c0f0f"
                             data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
-                        <button type="button" style="background-color: yellow;"
+                        <button type="button" style="background-color: #8c0f0f"
                             data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
@@ -120,7 +158,6 @@
                     </button>
                 </div>
             </div>
-
             <div class="col-12 col-lg-3 col-md-3 contenedor-alternativas"
                 style="padding-top: 10px;  background-color: #b3e0db">
                 <div class="row text-center row-contedor">
@@ -147,13 +184,13 @@
                             class="d-inline-block align-text-top imagen-derecha"><a
                             class="nav-link active parrafo-derecha" aria-current="page" href="#">Centro de Ayuda</a>
                     </div>
-                    <div class="col-4 col-lg-6 col-md-6"><img src="img/sonreir.png" alt="" width="53" height="40"
-                            class="d-inline-block align-text-top imagen-derecha"><a
-                            class="nav-link active parrafo-derecha" aria-current="page" href="#">Solicita tu turno</a>
+                    <div class="col-4 col-lg-6 col-md-6 bg-warning"><img src="img/sonreir.png" alt="" width="53"
+                            height="40" class="d-inline-block align-text-top imagen-derecha"><a
+                            class="nav-link active parrafo-derecha" data-bs-toggle="modal"
+                            data-bs-target="#exampleModa2" aria-current="page" href="#">Solicita tu credito</a>
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="col-12 col-md-3 col-lg-3 col-sm-12">
             <div class="card carta">
@@ -163,80 +200,87 @@
                     <p class="card-text"> Nuestros supervisores estaran encantados de comunicarse con usted</p>
                     <a href="#" class="btn btn-primary boton">Vamos!</a>
                 </div>
+            </div>
+        </div>
     </section>
-
-
-
-
     <section class="container caja23">
         <div class="row ">
-            <div class=" col-12 col-lg-6 col-md-6"></div>
+            <div class=" col-12 col-lg-6 col-md-6 carta-enorme">
+                <div class="card enorme-card">
+                    <img src="img/cards/Sostenibilidad-BBVA-colombia-home.jpg.img.768.1645648239336.jpg"
+                        class="card-img-top imagen-carta" alt="...">
+                    <div class="card-body"
+                        style="background-color: var(--outstandingopportunitycard-background--100,#f4f4f4);">
+                        <h4 class="card-title"><img src="img/corazon.svg" alt="" width="30" height="24"
+                                class="d-inline-block align-text-top me-1">Cuando tu banco cuida tus recursos y los del
+                            medio ambiente, todo hace clic</h4>
+                        <p class="card-text">Conoce nuestras soluciones sostenibles para ti.</p>
+                        <a href="#" class="btn btn-primary"
+                            style="margin-top: 49px;  background-color: #8c0f0f; border: none;">Ver más</a>
+                    </div>
+                </div>
+            </div>
             <div class=" col-12 col-lg-6 col-md-6">
                 <div class="row">
                     <div class="col-12 col-lg-6 col-md-6">
-                    <div class="card card1" style="width: 18rem;">
-                        <div class="card-body card-body1">
-                            <img src="img/1_026_investment.svg" alt="" width="30" height="24"
-                                class="d-inline-block align-text-top me-1" style="margin-bottom: 20px;">
-                            <h6 class="card-subtitle mb-2 text-muted Asamblea">Asamblea General de Accionistas
-                            </h6>
-                            <p class="card-text subtitle1">Conéctate a nuestra transmisión en vivo este 22 de
-                                Abril
-                                de 2022</p>
-                            <a href="#" class="card-link conoce">Conoce más</a>
+                        <div class="card card1">
+                            <div class="card-body card-body1">
+                                <img src="img/1_026_investment.svg" alt="" width="30" height="24"
+                                    class="d-inline-block align-text-top me-1" style="margin-bottom: 20px;">
+                                <h6 class="card-subtitle mb-2 text-muted Asamblea">Asamblea General de Accionistas
+                                </h6>
+                                <p class="card-text subtitle1">Conéctate a nuestra transmisión en vivo este 22 de
+                                    Abril
+                                    de 2022</p>
+                                <a href="#" class="card-link conoce">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6">
+                        <div class="card card1">
+                            <div class="card-body card-body1">
+                                <img src="img/carro.svg" alt="" width="30" height="24"
+                                    class="d-inline-block align-text-top me-1" style="margin-bottom: 20px;">
+                                <h6 class="card-subtitle mb-2 text-muted Asamblea">Credito de Vehículo
+                                </h6>
+                                <p class="card-text subtitle1">Obtén condiciones y beneficios especiales para adquirir
+                                    tu carro nuevo, usado y/o productivo</p>
+                                <a href="#" class="card-link conoce">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6">
+                        <div class="card card1">
+                            <div class="card-body card-body1">
+                                <img src="img/1_062_ric.svg" alt="" width="30" height="24"
+                                    class="d-inline-block align-text-top me-1" style="margin-bottom: 20px;">
+                                <h6 class="card-subtitle mb-2 text-muted Asamblea">CDT Online
+                                </h6>
+                                <p class="card-text subtitle1">Empieza a ahorrar desde tu celular abriendo un CDT Online
+                                    desde BBVA móvil.</p>
+                                <a href="#" class="card-link conoce">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6">
+                        <div class="card card1">
+                            <div class="card-body card-body1">
+                                <img src="img/tarjeta.svg" alt="" width="30" height="24"
+                                    class="d-inline-block align-text-top me-1" style="margin-bottom: 10px;">
+                                <h6>Tarjeta Amparada</h6>
+                                <p class="card-text subtitle1">Comparte parte del cupo de tu tarjeta de crédito
+                                    dando una tarjeta a los familiares que necesites.</p>
+                                <a href="#" class="card-link conoce">Conoce más</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 col-md-6">
-                    <div class="card card1" style="width: 18rem;">
-                        <div class="card-body card-body1">
-                            <img src="img/1_026_investment.svg" alt="" width="30" height="24"
-                                class="d-inline-block align-text-top me-1" style="margin-bottom: 20px;">
-                            <h6 class="card-subtitle mb-2 text-muted Asamblea">Asamblea General de Accionistas
-                            </h6>
-                            <p class="card-text subtitle1">Conéctate a nuestra transmisión en vivo este 22 de
-                                Abril
-                                de 2022</p>
-                            <a href="#" class="card-link conoce">Conoce más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 col-md-6">
-                    <div class="card card1" style="width: 18rem;">
-                        <div class="card-body card-body1">
-                            <img src="img/1_026_investment.svg" alt="" width="30" height="24"
-                                class="d-inline-block align-text-top me-1" style="margin-bottom: 20px;">
-                            <h6 class="card-subtitle mb-2 text-muted Asamblea">Asamblea General de Accionistas
-                            </h6>
-                            <p class="card-text subtitle1">Conéctate a nuestra transmisión en vivo este 22 de
-                                Abril
-                                de 2022</p>
-                            <a href="#" class="card-link conoce">Conoce más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 col-md-6">
-                    <div class="card card1" style="width: 18rem;">
-                        <div class="card-body card-body1">
-                            <img src="img/1_026_investment.svg" alt="" width="30" height="24"
-                                class="d-inline-block align-text-top me-1" style="margin-bottom: 20px;">
-                            <h6 class="card-subtitle mb-2 text-muted Asamblea">Asamblea General de Accionistas
-                            </h6>
-                            <p class="card-text subtitle1">Conéctate a nuestra transmisión en vivo este 22 de
-                                Abril
-                                de 2022</p>
-                            <a href="#" class="card-link conoce">Conoce más</a>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-        </div>
+
+            </div>
     </section>
-
-
     <section class="container caja2">
-        <div class="row ">
-            <div class="col-12 col-lg-6 col-md-6">
+        <div class="row row-iconos" style="object-position: center;text-align: center;">
+            <div class="col-12 col-lg-12 col-md-12">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-12 col-md-12 caracteristicas">
                         Beneficios para Nuestros usuarios
@@ -278,13 +322,359 @@
                         <p class="p-caja2">Proteje tu cuenta</p>
                     </div>
                 </div>
+                <div class="col-12 div-oculto">
+                    <p class="p-oculta1">*Las cuentas creadas por internet no pueden recibir giros desde el exterior ni
+                        remesas familiares.</p>
+                    <p class="p-oculta1">*Solo puedes abrir la cuenta por internet si eres mayor de edad con
+                        nacionalidad Colombiana.</p>
+                </div>
             </div>
+        </div>
+    </section>
+    <section class="container caja3">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center text-center mb-5">
+                <h2>Todos los planes incluyen</h2>
+            </div>
+            <div class="col-12 col-lg-12 col-md-12">
+                <div class="carrusel-raro">
+                    <div class="d-flex clase-responsive">
+                        <div><img class="imagenes-carrusel" src="img/celular.svg" alt=""></div>
+                        <div>
+                            <h2 class="ofertas"><strong>Ofertas</strong></h2>
+                            <p class="ofertas-sub">Ofertas increíbles en tus marcas favoritas pagando <br> tu Tarjeta
+                                Débito Mastercard.</p>
+                            <a class="la-a">Conocer más</a>
+                        </div>
+                    </div>
+                    <div class="d-flex clase-responsive">
+                        <div><img class="imagenes-carrusel" src="img/tarea.svg" alt=""></div>
+                        <div>
+                            <h2 class="ofertas"><strong>Gestiona tu día a día</strong></h2>
+                            <p class="ofertas-sub">
+                                Gestiona tu plata y ten el control de tus gastos con Día a Día.​​ </p>
+                            <a class="la-a">Conocer más</a>
+                        </div>
+                    </div>
+                    <div class="d-flex clase-responsive">
+                        <div><img class="imagenes-carrusel" src="img/mapa.svg" alt=""></div>
+                        <div>
+                            <h2 class="ofertas "><strong>
+                                    Cobertura en todo el país</strong></h2>
+                            <p class="ofertas-sub">
+                                + de 600 sucursales físicas, + de 4.000 cajeros y + 21.000 <br>corresponsales bancarios
+                                Bancochaco.</p>
+                            <a class="la-a">Conocer más</a>
+                        </div>
+                    </div>
+                    <div class="d-flex clase-responsive">
+                        <div><img class="imagenes-carrusel" src="img/libros.svg" alt=""></div>
+                        <div>
+                            <h2 class="ofertas"><strong>Inscripción de facturas</strong></h2>
+                            <p class="ofertas-sub">De tus servicios públicos, celular e Internet y págalas <br>sin costo
+                                adicional en tu App Bancochaco.</p>
+                            <a class="la-a">Conocer más</a>
+                        </div>
+                    </div>
+                    <div class="d-flex clase-responsive">
+                        <div><img class="imagenes-carrusel" src="img/dinero.png" alt=""></div>
+                        <div>
+                            <h2 class="ofertas"><strong>Transfiya</strong></h2>
+                            <p class="ofertas-sub">
+                                Envías o recibe plata en línea de otros bancos que también<br> tienen Transfiya sin
+                                costo adicional.</p>
+                            <a class="la-a">Conocer más</a>
+                        </div>
+                    </div>
+                    <div class="d-flex clase-responsive">
+                        <div><img class="imagenes-carrusel" src="img/bolsillos.svg" alt=""></div>
+                        <div>
+                            <h2 class="ofertas"><strong>Bolsillos</strong></h2>
+                            <p class="ofertas-sub">Ahorra y administra tu plata usando los bolsillos que encuentras en
+                                la App Bancochaco <br>y en la Sucursal Virtual Personas. </p>
+                            <a class="la-a">Conocer más</a>
+                        </div>
+                    </div>
+                    <div class="d-flex clase-responsive">
+                        <div><img class="imagenes-carrusel" src="img/cosas.svg" alt=""></div>
+                        <div>
+                            <h2 class="ofertas"><strong>Paga como quieras</strong></h2>
+                            <p class="ofertas-sub">Paga con tu Billetera Móvil, QR, manilla y sticker <br>en diferentes
+                                establecimientos físicos.</p>
+                            <a class="la-a">Conocer más</a>
+                        </div>
+                    </div>
+                    <div class="d-flex clase-responsive">
+                        <div><img class="imagenes-carrusel" src="img/personas.svg" alt=""></div>
+                        <div>
+                            <h2 class="ofertas"><strong>Tu banco siempre al alcance</strong></h2>
+                            <p class="ofertas-sub">Usa App Bancolombia para enviar y recibir dinero,<br> conocer el
+                                saldo, pagar tus facturas y mucho más.</p>
+                            <a class="la-a">Conocer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 div-oculto">
+                <p class="p-oculta">*si ya tienes una cuenta de ahorros puedes modificar el plan por internet</p>
+                <p class="p-oculta">*consulta ya, todos nuestros beneficios para tu hogar y aprovecha las ofertas</p>
+            </div>
+        </div>
+    </section>
+    <section class="container caja4">
+        <div class="row">
+            <div class="col-12 col-lg-3 col-md-3">
+                <div class="card">
+                    <img src="img/carrusel/premium.webp" class="card-img-top" alt="...">
+                    <div class="card-body " style="background-color: wheat;">
+                        <h5 class="card-title">Plan Premiun</h5>
+                        <p class="card-text">Cuotas de manejo</p>
+                        <p>$12,990 mes</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Retiros en
+                            cajeros ilimitados</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Retiros en
+                            corresponsal Bancario ilimitados</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Bolsillos
+                            para
+                            ahorrar y separar tu plata</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30"
+                                height="30">Transferencias
+                            entre otros bancos gratis e ilimitadas</li>
+                    </ul>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-warning btn-lg ">Abrir cuenta</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-3">
+                <div class="card">
+                    <img src="img/carrusel/estandar.jpg" class="card-img-top" alt="...">
+                    <div class="card-body " style="background-color: turquoise;">
+                        <h5 class="card-title">Plan Estandar</h5>
+                        <p class="card-text">Cuota de manejo</p>
+                        <p>$9,743 mes</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Retiros en
+                            cajeros ilimitados</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Retiros en
+                            corresponsal Bancario $1.900 c/u</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Bolsillos
+                            para
+                            ahorrar y separar tu plata</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30"
+                                height="30">Transferencias
+                            entre otros bancos gratis e ilimitadas</li>
+                    </ul>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-warning btn-lg">Abrir cuenta</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-3">
+                <div class="card">
+                    <img src="img/carrusel/basico.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: tomato;">
+                        <h5 class="card-title">Plan Basico</h5>
+                        <p class="card-text">Cuota de manejo</p>
+                        <p>$6,495 mes</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Retiros en
+                            cajeros $2.950</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Retiros en
+                            corresponsal Bancario ilimitados</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Bolsillos
+                            para
+                            ahorrar y separar tu plata</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30"
+                                height="30">Transferencias
+                            entre otros bancos gratis e ilimitadas</li>
+                    </ul>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-warning btn-lg">Abrir cuenta</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-3">
+                <div class="card">
+                    <img src="img/carrusel/nomina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body " style="background-color: yellow;">
+                        <h5 class="card-title">Plan Nómina</h5>
+                        <p class="card-text">Cuota de manejo</p>
+                        <p>Desde $0 mes</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Retiros segun convenio</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Retiros en
+                            corresponsal Bancario *segun convenio</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Bolsillos
+                            para
+                            ahorrar y separar tu plata</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30"
+                                height="30">Transferencias
+                            entre otros bancos gratis e ilimitadas</li>
+                    </ul>
+                    <div class="card-body ">
+                        <button type="button" class="btn btn-warning btn-lg">Abrir cuenta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted bg-dark footer3">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Conéctate con nosotras en las redes sociales:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Vigilado Superfinanciera
+                        </h6>
+                        <p>
+                            BancoChaco su banco amigo, tu asesor en cumplir tus sueños.
+                        </p>
+                        <p>Realiza todos tus pago PSE.</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Productos
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">CTD Online</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Crédito de Vehículo</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Crédito hipotecario</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Libranza</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Sitios de Interés
+                        </h6>
+                        <p>
+                            <a href="wwww.facebook.com" class="text-reset">Facebook</a>
+                        </p>
+                        <p>
+                            <a href="www.instagram.com" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="" class="text-reset">Icetex</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Carroya</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contáctenos
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i>Carrera 30 N°70-12, Bucaramanga</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            Atencion_usuario@BancoChaco.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i>+ 57 316 530 52 64</p>
+                        <p><i class="fas fa-print me-3"></i>+ 57 317 246 60 43</p>
+                        <a class="iconos icono-imagen d-flex justify-content-center iconos-2" href="">
+                            <img class="iconos1" src="img/preguntas/facebook.png" width="26" alt="">
+                            <img class="iconos1" src="img/preguntas/twitter.png" width="26" alt="">
+                            <img src="img/preguntas/whatsapp.png" width="26" alt="">
+                        </a>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright Bogotá Institute of Technology:
+        </div>
+        <!-- Copyright -->
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $('.carrusel-raro').slick({
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+        });
+    </script>
+    <script src="calculadora.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo:wght@700&family=Dancing+Script:wght@400;500&family=M+PLUS+Rounded+1c:wght@100&family=Ramaraja&family=Roboto:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Macondo+Swash+Caps&display=swap');
+
+.imagen-logo{
+    position: absolute;
+    width: 68px;
+    height: 54px;
+    padding-left: 17px;
+    margin-top: 20px;
+}
+
+.titulo-chaco{
+    padding-left: 80px;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.bg-dark {
+    background-color: #8c0f0f!important;
+}
+
+.letra-slider{
+    font-family: OpenSans-Regular;
+    margin-left: 60px;
+    font-size: 21px;
+
+}
+.listadoSlider{
+    margin-left: 190px;
+}
+
+.footer2 {
+    margin-top: 100px;
+}
+
+.iconos1 {
+    margin-right: 10px;
+}
+
+.iconos-2 {
+    margin-bottom: 25px;
+}
+
+@media (min-width: 992px) and (max-width: 1499px){
+    .listadoSlider {
+        margin-left: 100px !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px !important; 
+        padding-left: 0rem !important; 
+}
+}
+
+@media (min-width: 1px) and (max-width: 992px){
+    .carta1 {
+        width: 100% !important;
+    }
+
+    .imagen-centro {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenido3 {
+        margin-left: -15px;
+    }
+    .imagen-pregunta{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*de aqui para abajo es lo de la navar */
+
+    .titulo-chaco {
+        padding-left: 0px !important;
+    }
+
+    .imagen-logo {
+        position: relative;
+        margin-top: 0px !important;
+        max-width: 39px;
+        max-height: 39px;
+        margin-left: 29px;
+    }
+
+    .listado:hover{
+        background-color: rgb(46, 95, 70);
+        width: 100%;
+    }
+
+    .listado{
+        padding-top:10px
+    }
+
+    .colapsador{
+        margin-top:17px !important;
+    }
+
+    .imagen-logo{
+        padding-left: 0 !important;
+    }
+
+    .listadoSlider{
+        margin-left: 0px !important;
+    }
+
+    .letra-slider{
+        font-family: OpenSans-Regular;
+        margin-left: 0px !important;
+    }
+
+    .bg-dark {
+        background-color: #212529!important;
+    }
+} 
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 0rem !important; 
+            padding-left: 0rem !important; 
+    }
+    }
+
+    /*hasta aqui*/
+
+.titulo {
+    margin-top: 86px;
+}
+
+.preguntas {
+    border-top: 1px solid #2c2a29;
+    text-decoration: none;
+    color: #000000;
+    height: 68px;
+    align-items: center;
+    border-bottom: 1px solid #2c2a29;
+    padding-top: 10px;
+}
+.carta1 {
+    width: 25rem;
+    border: none !important;
+    background-color: #FF7F41;
+}
+
+.boton1 {
+    margin-top: 64px;
+    border-radius: 6px;
+    background-color: #FF7F41;
+    border: 1px solid;
+}
+.boton1:hover{
+    background-color: #8c0f0f;
+    color: white;
+    border: none;
+}
+
+.container-2 {
+    margin-top: 54px;
+}
+
+.iconos {
+    color: #8c0f0f!important;
+}
+
+
+.caja3 {
+    margin-top: 100px;
+    margin-bottom: 65px;
+}
+
+.espacio {
+    margin-top: 40px;
+}
+
+.texto-1 {
+    color: #000000;
+}
+.icono-imagen{
+    text-decoration: none !important;
+}
