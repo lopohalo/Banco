@@ -33,6 +33,9 @@
     font-size: 21px;
 
 }
+.listadoSlider {
+    margin-left: 190px;
+}
 .slick-prev {
     width: 50px !important;
     height: 50px !important;
@@ -46,6 +49,41 @@
     color: #8c0f0f!important;
     -webkit-font-smoothing: antialiased;
 }
+.imagen-carrusel1{
+    width: 88%;
+}
+.botoncarrusel1 {
+    border-radius: 50px;
+    color: #292929;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.38px;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    background-color: #FDDA24;
+    margin-top: 50px;
+    border: none;
+    height: 50px;
+    width: 150px;
+}
+
+.footer1 {
+    margin-top: 100px;
+}
+
+.iconos1 {
+    margin-right: 10px;
+}
+
+.icono-imagen{
+    text-decoration: none !important;
+}
+
+.iconos-2 {
+    margin-bottom: 25px;
+}
 
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
@@ -55,6 +93,9 @@
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 10px !important; 
         padding-left: 0rem !important; 
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 200px !important;
 }
 }
 
@@ -126,6 +167,9 @@
     .bg-dark {
         background-color: #212529!important;
     }
+    .imagen-carrusel1{
+        width: 100%;
+    }
     .slick-next:before, .slick-prev:before {
         font-size: 30px !important;
     }
@@ -140,10 +184,19 @@
         right: -7px !important;
     }
     .slick-dotted.slick-slider {
-        margin-bottom: 141px !important;
+        margin-bottom: 200px !important;
     }
     .fondo{
         background: transparent !important;
+    }
+    .imagen-empresarial{
+        max-width:80%;
+    }
+    .botoncarrusel1 {
+        margin-top: 10px ;
+    }
+    .la-tierra{
+        width: 5% !important;
     }
 } 
 
@@ -156,24 +209,6 @@
 
 .carta4{
 background-color: #00ffff;
-}
-
-
-.botoncarrusel1 {
-    border-radius: 50px;
-    color: #292929;
-    font-family: Open Sans;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: -0.38px;
-    text-align: center;
-    text-decoration: none!important;
-    text-transform: uppercase;
-    background-color: #FDDA24;
-    margin-top: 50px;
-    border: none;
-    height: 50px;
-    width: 150px;
 }
 
 .botoncarrusel1:hover {
@@ -189,9 +224,7 @@ background-color: #00ffff;
 .cajanumero1{
     margin-top: 50px;
 }
-.imagen-carrusel1{
-    width: 88%;
-}
+
 .titulocarrusel1{
     font-size:2.3rem
 }
@@ -324,3 +357,11 @@ background-color: #00ffff;
 .espacio {
     margin-top: 50px;
 }
+@media (min-width: 992px) and (max-width: 1499px){
+        .boton-3 {
+            margin-top: 22px;
+        }
+        .boton-5 {
+            margin-top: 60px;
+        }
+    }
