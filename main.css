@@ -69,6 +69,10 @@
     width: 150px;
 }
 
+.footer1 {
+    margin-top: 100px;
+}
+
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
         margin-left: 100px !important;
@@ -77,6 +81,9 @@
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 10px !important; 
         padding-left: 0rem !important; 
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 200px !important;
 }
 }
 
@@ -338,3 +345,11 @@ background-color: #00ffff;
 .espacio {
     margin-top: 50px;
 }
+@media (min-width: 992px) and (max-width: 1499px){
+        .boton-3 {
+            margin-top: 22px;
+        }
+        .boton-5 {
+            margin-top: 60px;
+        }
+    }
