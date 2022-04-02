@@ -215,14 +215,14 @@ body{
     margin-bottom: 30px;
 }
 .input-valores1{
-    width: 100%;
+    width: 95%;
     border-radius: 10%;
     background-color:  #e3e3f5;
     font-size: 1.5rem;
 }
 .btn-clc1{
     margin-bottom: 2px;
-    width: 100%;
+    width: 95%;
     background-color: black;
     color: white;
 }
