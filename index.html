@@ -43,13 +43,54 @@
                                 class="d-inline-block align-text-top me-1"> Opciones</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2 barra" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                <form class="d-flex" id="form_user">
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar Sesión</button>
                 </form>
             </div>
         </div>
     </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between  bg-white py-2">
+                        <h3>Iniciar Sesión</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                            <input type="text" minlength="5" maxlength="15" class="form-control"
+                                id="exampleInputnombre1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nosostros no compartiremos tu correo con alguien más.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <div id="contraseña" class="form-text">Nunca compartas tu contraseña con alguien más.</div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" onclick="cambio_boton()" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordar Contraseña</label>
+                        </div>
+                        <div class="alerta_pass"></div>
+                        <button type="button" onclick="autenticacion()" class="btn btn-primary">Iniciar Sesión</button>
+                        <button type="button" class="btn btn-primary">Cancelar</button>
+                    </form>
+                </div>
+
+            </div>|
+        </div>
+    </div>
+
     <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -507,7 +548,8 @@
                         <p>Desde $0 mes</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Retiros segun convenio</li>
+                        <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Retiros segun
+                            convenio</li>
                         <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Retiros en
                             corresponsal Bancario *segun convenio</li>
                         <li class="list-group-item"><img src="img/chulo.png" alt="" width="30" height="30">Bolsillos
@@ -675,6 +717,7 @@
         });
     </script>
     <script src="calculadora.js"></script>
+    <script src="js/code.js"></script>
 </body>
 
 </html>
