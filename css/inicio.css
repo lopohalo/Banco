@@ -215,7 +215,7 @@ body{
     margin-bottom: 30px;
 }
 .input-valores1{
-    width: 100%;
+    width: 95%;
     border-radius: 10%;
     background-color:  #e3e3f5;
     font-size: 1.5rem;
@@ -379,7 +379,7 @@ body{
         max-width: 80px;
     }
     .slick-next:before, .slick-prev:before {
-        font-size: 40px !important;
+        font-size: 34px !important;
     }
     .slick-prev {
         width: 30px !important;
