@@ -84,6 +84,11 @@
 .iconos-2 {
     margin-bottom: 25px;
 }
+.text-white {
+    color: #fff!important;
+    font-size: 2rem;
+    margin-right: 40px;
+}
 
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
@@ -197,6 +202,9 @@
     }
     .la-tierra{
         width: 5% !important;
+    }
+    .cerrarSesion{
+        justify-content: space-between !important;
     }
 } 
 

@@ -1,6 +1,5 @@
 function pad_numerico(dato) {
     let input_pad = document.querySelector("#casilla_pad")
-
     if (dato == "ok") {
         Swal.fire({
             title: '<strong>Cuotas en la cual usted desea cotizar</u></strong>',

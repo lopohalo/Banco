@@ -48,6 +48,11 @@
 .iconos-2 {
     margin-bottom: 25px;
 }
+.text-white {
+    color: #fff!important;
+    font-size: 2rem;
+    margin-right: 40px;
+}
 
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
@@ -77,6 +82,9 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .cerrarSesion{
+        justify-content: space-between !important;
     }
 
     /*de aqui para abajo es lo de la navar */

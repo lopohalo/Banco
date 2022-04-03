@@ -226,6 +226,22 @@ body{
     background-color: black;
     color: white;
 }
+.btn-clc2{
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.38px;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    border: 1px solid;
+    height: 40px;
+    width: 50%;
+}
+.btn-clc2:hover{
+    box-shadow: 0px 0px 1px 1px #8c0f0f;
+    background-color:#8c0f0f;
+}
 .btn-clc1:hover{
     box-shadow: 0px 0px 1px 1px #8c0f0f;
 }
@@ -255,6 +271,11 @@ body{
 
 .letra1 {
     color: #f8f8fd;
+}
+.text-white {
+    color: #fff!important;
+    font-size: 2rem;
+    margin-right: 40px;
 }
 
 @media (min-width: 992px) and (max-width: 1499px){
@@ -369,6 +390,9 @@ body{
     .navbar-nav .dropdown-menu {
         position: static;
         width: 67%;
+    }
+    .cerrarSesion{
+        justify-content: space-between !important;
     }
 
     .carrusel-texto{

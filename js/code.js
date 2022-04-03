@@ -60,13 +60,17 @@ function autenticacion() {
     var nombre = document.querySelector("#exampleInputnombre1").value
     var correo = document.querySelector("#exampleInputEmail1").value
     var contrasena = document.querySelector("#exampleInputPassword1").value
-
+    const checkiado = document.querySelector("#exampleCheck2").checked
+        nombre = nombre.trim()
+        correo = correo.trim()
+        contrasena = contrasena.trim()
     let verif_nombre = data_login_nombre.indexOf(nombre)
     let verif_correo = data_login_correo.indexOf(correo)
     let verif_contrasena = data_login_contrasena.indexOf(contrasena)
     
     if(nombre != "" && correo != "" && contrasena != ""){
-        if (verif_nombre != -1 && verif_correo != -1 && verif_contrasena != -1)   {
+        if(checkiado == true){
+        if (verif_nombre != -1 && verif_correo != -1 && verif_contrasena != -1 && checkiado == true)   {
 
             localStorage.setItem("nombre_nav", data_login_nombre[verif_nombre])
             myModal.hide();
@@ -87,6 +91,14 @@ function autenticacion() {
                 timer: 1500
             })
         }
+    } else{
+        Swal.fire({
+            icon: 'error',
+            title: 'No se puede continuar sin aceptar terminos y condiciones',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
     } else {
         Swal.fire({
             icon: 'error',
