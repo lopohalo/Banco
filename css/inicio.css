@@ -249,6 +249,14 @@ body{
     width: 20%;
 }
 
+.calculadora {
+    background-color: #8c0f;
+}
+
+.letra1 {
+    color: #f8f8fd;
+}
+
 @media (min-width: 992px) and (max-width: 1499px){
     .listadoSlider {
         margin-left: 100px !important;
