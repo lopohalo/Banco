@@ -70,7 +70,7 @@ function autenticacion() {
     
     if(nombre != "" && correo != "" && contrasena != ""){
         if(checkiado == true){
-        if (verif_nombre != -1 && verif_correo != -1 && verif_contrasena != -1 && checkiado == true)   {
+        if (verif_nombre != -1 && verif_correo != -1 && verif_contrasena != -1)   {
 
             localStorage.setItem("nombre_nav", data_login_nombre[verif_nombre])
             myModal.hide();
