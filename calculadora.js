@@ -37,9 +37,10 @@ function calcular_venta_diblo(cuotas) {
     valor_prestamo = parseInt(valor_prestamo)
     cuotas = parseInt(cuotas)
     if (cuotas == 6 && valor_prestamo > 499999) {
-        var resultado1 = (valor_prestamo * 0.2)
+        var resultado1 = (valor_prestamo * 0.2).Math.trunc()
         var resultado3 = (resultado1 + valor_prestamo)
         var resultado2 = (resultado1 + valor_prestamo) / 6
+        resultado2 = resultado2.Math.trunc()
         Swal.fire({
             title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
