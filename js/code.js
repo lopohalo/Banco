@@ -79,7 +79,7 @@ function autenticacion() {
             Swal.fire({
                 position: 'top-end',
                 icon: 'success',
-                title: 'Your work has been saved',
+                title: 'Tus datos han sido exitosamente registrados',
                 showConfirmButton: false,
                 timer: 1500
             })
