@@ -24,9 +24,9 @@ function pad_numerico(dato) {
                 '<i class="fa fa-thumbs-down"></i> Cancelar',
             cancelButtonAriaLabel: 'Thumbs down'
         })
-        } else  if(dato== "borrar"){
-            input_pad.value = input_pad.value.slice(0, -1)
-        } else {
+    } else if (dato == "borrar") {
+        input_pad.value = input_pad.value.slice(0, -1)
+    } else {
         input_pad.value += dato
     }
 }
@@ -37,17 +37,19 @@ function calcular_venta_diblo(cuotas) {
     valor_prestamo = parseInt(valor_prestamo)
     cuotas = parseInt(cuotas)
     if (cuotas == 6 && valor_prestamo > 499999) {
-        var resultado1 = (valor_prestamo * 0.2).Math.trunc()
+        var resultado1 = (valor_prestamo * 0.2)
         var resultado3 = (resultado1 + valor_prestamo)
         var resultado2 = (resultado1 + valor_prestamo) / 6
-        resultado2 = resultado2.Math.trunc()
+        resultado2 = Math.round(resultado2)
+        resultado2 = new Intl.NumberFormat().format(resultado2)
+        resultado3 = new Intl.NumberFormat().format(resultado3)
         Swal.fire({
             title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo}</b> se podria aprovar, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>, ` +
-                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprovar, ` +
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
+                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
             showCancelButton: true,
             focusConfirm: false,
@@ -61,14 +63,17 @@ function calcular_venta_diblo(cuotas) {
     } else if (cuotas == 12 && valor_prestamo > 499999) {
         var resultado1 = (valor_prestamo * 0.2)
         var resultado3 = (resultado1 + valor_prestamo)
-        var resultado2 = (resultado1 + valor_prestamo) / 12
+        var resultado2 = (resultado1 + valor_prestamo) / 6
+        resultado2 = Math.round(resultado2)
+        resultado2 = new Intl.NumberFormat().format(resultado2)
+        resultado3 = new Intl.NumberFormat().format(resultado3)
         Swal.fire({
             title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo}</b> se podria aprovar, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>, ` +
-                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprovar, ` +
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
+                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
             showCancelButton: true,
             focusConfirm: false,
@@ -82,14 +87,17 @@ function calcular_venta_diblo(cuotas) {
     } else if (cuotas == 18 && valor_prestamo > 499999) {
         var resultado1 = (valor_prestamo * 0.2)
         var resultado3 = (resultado1 + valor_prestamo)
-        var resultado2 = (resultado1 + valor_prestamo) / 18
+        var resultado2 = (resultado1 + valor_prestamo) / 6
+        resultado2 = Math.round(resultado2)
+        resultado2 = new Intl.NumberFormat().format(resultado2)
+        resultado3 = new Intl.NumberFormat().format(resultado3)
         Swal.fire({
             title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo}</b> se podria aprovar, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>, ` +
-                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprovar, ` +
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
+                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
             showCancelButton: true,
             focusConfirm: false,
@@ -103,14 +111,17 @@ function calcular_venta_diblo(cuotas) {
     } else if (cuotas == 24 && valor_prestamo > 499999) {
         var resultado1 = (valor_prestamo * 0.2)
         var resultado3 = (resultado1 + valor_prestamo)
-        var resultado2 = (resultado1 + valor_prestamo) / 24
+        var resultado2 = (resultado1 + valor_prestamo) / 6
+        resultado2 = Math.round(resultado2)
+        resultado2 = new Intl.NumberFormat().format(resultado2)
+        resultado3 = new Intl.NumberFormat().format(resultado3)
         Swal.fire({
             title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo}</b> se podria aprovar, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>, ` +
-                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprovar, ` +
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
+                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
             showCancelButton: true,
             focusConfirm: false,
