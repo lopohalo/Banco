@@ -1,7 +1,6 @@
 function pad_numerico(dato) {
     let input_pad = document.querySelector("#casilla_pad")
 
-
     if (dato == "ok") {
         Swal.fire({
             title: '<strong>Cuotas en la cual usted desea cotizar</u></strong>',
@@ -26,7 +25,9 @@ function pad_numerico(dato) {
                 '<i class="fa fa-thumbs-down"></i> Cancelar',
             cancelButtonAriaLabel: 'Thumbs down'
         })
-    } else {
+        } else  if(dato== "borrar"){
+            input_pad.value = input_pad.value.slice(0, -1)
+        } else {
         input_pad.value += dato
     }
 }
@@ -44,8 +45,8 @@ function calcular_venta_diblo(cuotas) {
             title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `tu credito de un valor de  <b>${valor_prestamo}</b> se podria aprovar, ` +
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>, ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
             showCloseButton: true,
             showCancelButton: true,
@@ -65,8 +66,8 @@ function calcular_venta_diblo(cuotas) {
             title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `tu credito de un valor de  <b>${valor_prestamo}</b> se podria aprovar, ` +
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>, ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
             showCloseButton: true,
             showCancelButton: true,
@@ -86,8 +87,8 @@ function calcular_venta_diblo(cuotas) {
             title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `tu credito de un valor de  <b>${valor_prestamo}</b> se podria aprovar, ` +
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>, ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
             showCloseButton: true,
             showCancelButton: true,
@@ -107,8 +108,8 @@ function calcular_venta_diblo(cuotas) {
             title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `tu credito de un valor de  <b>${valor_prestamo}</b> se podria aprovar, ` +
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>, ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
             showCloseButton: true,
             showCancelButton: true,
