@@ -4,38 +4,129 @@ function pad_numerico(dato) {
 
     if (dato == "ok") {
         Swal.fire({
-            title: '<strong>Datos del credito</u></strong>',
+            title: '<strong>Cuotas en la cual usted desea cotizar</u></strong>',
             icon: 'info',
             html:
+                '<b>Recuerde que manejamos el 2% de tasa de interes a prestamos a cualquier plazo</b>' +
                 `
-        <button class="btn btn-dark" onclick="calcular_venta_diblo(6)" id="1">6</button>
-        <button class="btn btn-dark" id="2">12</button>
-        <button class="btn btn-dark" id="3">18</button>
-        <button class="btn btn-dark" id="4">24</button>
-        `,
+                    <br>
+                    <br>
+            <button class="btn btn-dark botonesjs" onclick="calcular_venta_diblo(6)" id="1">6</button>
+            <button class="btn btn-dark botonesjs" onclick="calcular_venta_diblo(12)" id="2">12</button>
+            <button class="btn btn-dark botonesjs" onclick="calcular_venta_diblo(18)" id="3">18</button>
+            <button class="btn btn-dark botonesjs" onclick="calcular_venta_diblo(24)" id="4">24</button>
+            `,
             showCloseButton: true,
             showCancelButton: true,
             focusConfirm: false,
             confirmButtonText:
-                '<i class="fa fa-thumbs-up"></i> Great!',
+                '<i class="fa fa-thumbs-up"></i> Genial!',
             confirmButtonAriaLabel: 'Thumbs up, great!',
             cancelButtonText:
-                '<i class="fa fa-thumbs-down"></i>',
+                '<i class="fa fa-thumbs-down"></i> Cancelar',
             cancelButtonAriaLabel: 'Thumbs down'
         })
     } else {
         input_pad.value += dato
     }
-
 }
+
 
 function calcular_venta_diblo(cuotas) {
     let valor_prestamo = document.querySelector("#casilla_pad").value
     valor_prestamo = parseInt(valor_prestamo)
     cuotas = parseInt(cuotas)
-    switch (cuotas) {
-        case 6:
-            console.log(valor_prestamo / cuotas)
-            break;
+    if (cuotas == 6 && valor_prestamo > 499999) {
+        var resultado1 = (valor_prestamo * 0.2)
+        var resultado3= (resultado1 + valor_prestamo)
+        var resultado2 = (resultado1 + valor_prestamo) / 6
+        Swal.fire({
+            title: '<strong>ATENTO <u><br>Su credito fue aprovado con las siguientes espeficaciones</u></strong>',
+            icon: 'info',
+            html:
+                `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
+                `<br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `<br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+            showCloseButton: true,
+            showCancelButton: true,
+            focusConfirm: false,
+            confirmButtonText:
+                '<i class="fa fa-thumbs-up"></i> Genial!',
+            confirmButtonAriaLabel: 'Thumbs up, great!',
+            cancelButtonText:
+                '<i class="fa fa-thumbs-down"></i> Cancelar!',
+            cancelButtonAriaLabel: 'Thumbs down'
+        })
+    } else if (cuotas == 12 && valor_prestamo > 499999) {
+        var resultado1 = (valor_prestamo * 0.2)
+        var resultado3= (resultado1 + valor_prestamo)
+        var resultado2 = (resultado1 + valor_prestamo) / 12
+        Swal.fire({
+            title: '<strong>ATENTO <u><br>Su credito fue aprovado con las siguientes espeficaciones</u></strong>',
+            icon: 'info',
+            html:
+                `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
+                `<br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `<br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+            showCloseButton: true,
+            showCancelButton: true,
+            focusConfirm: false,
+            confirmButtonText:
+                '<i class="fa fa-thumbs-up"></i> Genial!',
+            confirmButtonAriaLabel: 'Thumbs up, great!',
+            cancelButtonText:
+                '<i class="fa fa-thumbs-down"></i> Cancelar!',
+            cancelButtonAriaLabel: 'Thumbs down'
+        })
+    } else if (cuotas == 18 && valor_prestamo > 499999) {
+        var resultado1 = (valor_prestamo * 0.2)
+        var resultado3= (resultado1 + valor_prestamo)
+        var resultado2 = (resultado1 + valor_prestamo) / 18
+        Swal.fire({
+            title: '<strong>ATENTO <u><br>Su credito fue aprovado con las siguientes espeficaciones</u></strong>',
+            icon: 'info',
+            html:
+                `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
+                `<br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `<br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+            showCloseButton: true,
+            showCancelButton: true,
+            focusConfirm: false,
+            confirmButtonText:
+                '<i class="fa fa-thumbs-up"></i> Genial!',
+            confirmButtonAriaLabel: 'Thumbs up, great!',
+            cancelButtonText:
+                '<i class="fa fa-thumbs-down"></i> Cancelar!',
+            cancelButtonAriaLabel: 'Thumbs down'
+        })
+    } else if (cuotas == 24 && valor_prestamo > 499999) {
+        var resultado1 = (valor_prestamo * 0.2)
+        var resultado3= (resultado1 + valor_prestamo)
+        var resultado2 = (resultado1 + valor_prestamo) / 24
+        Swal.fire({
+            title: '<strong>ATENTO <u><br>Su credito fue aprovado con las siguientes espeficaciones</u></strong>',
+            icon: 'info',
+            html:
+                `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
+                `<br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `<br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+            showCloseButton: true,
+            showCancelButton: true,
+            focusConfirm: false,
+            confirmButtonText:
+                '<i class="fa fa-thumbs-up"></i> Genial!',
+            confirmButtonAriaLabel: 'Thumbs up, great!',
+            cancelButtonText:
+                '<i class="fa fa-thumbs-down"></i> Cancelar!',
+            cancelButtonAriaLabel: 'Thumbs down'
+        })
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'El valor del credito debe ser mayor a 500.000!',
+            showConfirmButton: false,
+            timer: 1500
+        })
     }
 }
+
