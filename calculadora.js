@@ -38,15 +38,15 @@ function calcular_venta_diblo(cuotas) {
     cuotas = parseInt(cuotas)
     if (cuotas == 6 && valor_prestamo > 499999) {
         var resultado1 = (valor_prestamo * 0.2)
-        var resultado3= (resultado1 + valor_prestamo)
+        var resultado3 = (resultado1 + valor_prestamo)
         var resultado2 = (resultado1 + valor_prestamo) / 6
         Swal.fire({
-            title: '<strong>ATENTO <u><br>Su credito fue aprovado con las siguientes espeficaciones</u></strong>',
+            title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
                 `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
-                `<br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
-                `<br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
             showCloseButton: true,
             showCancelButton: true,
             focusConfirm: false,
@@ -59,15 +59,15 @@ function calcular_venta_diblo(cuotas) {
         })
     } else if (cuotas == 12 && valor_prestamo > 499999) {
         var resultado1 = (valor_prestamo * 0.2)
-        var resultado3= (resultado1 + valor_prestamo)
+        var resultado3 = (resultado1 + valor_prestamo)
         var resultado2 = (resultado1 + valor_prestamo) / 12
         Swal.fire({
-            title: '<strong>ATENTO <u><br>Su credito fue aprovado con las siguientes espeficaciones</u></strong>',
+            title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
                 `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
-                `<br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
-                `<br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
             showCloseButton: true,
             showCancelButton: true,
             focusConfirm: false,
@@ -80,15 +80,15 @@ function calcular_venta_diblo(cuotas) {
         })
     } else if (cuotas == 18 && valor_prestamo > 499999) {
         var resultado1 = (valor_prestamo * 0.2)
-        var resultado3= (resultado1 + valor_prestamo)
+        var resultado3 = (resultado1 + valor_prestamo)
         var resultado2 = (resultado1 + valor_prestamo) / 18
         Swal.fire({
-            title: '<strong>ATENTO <u><br>Su credito fue aprovado con las siguientes espeficaciones</u></strong>',
+            title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
                 `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
-                `<br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
-                `<br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
             showCloseButton: true,
             showCancelButton: true,
             focusConfirm: false,
@@ -101,15 +101,15 @@ function calcular_venta_diblo(cuotas) {
         })
     } else if (cuotas == 24 && valor_prestamo > 499999) {
         var resultado1 = (valor_prestamo * 0.2)
-        var resultado3= (resultado1 + valor_prestamo)
+        var resultado3 = (resultado1 + valor_prestamo)
         var resultado2 = (resultado1 + valor_prestamo) / 24
         Swal.fire({
-            title: '<strong>ATENTO <u><br>Su credito fue aprovado con las siguientes espeficaciones</u></strong>',
+            title: '<strong>ATENTO <u><br>Su credito se aprovaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
                 `tu credito de un valor de  <b>${valor_prestamo}</b> fue aprovado, ` +
-                `<br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
-                `<br>Con un total de  <b>${resultado3}</b> al finalizar, `,
+                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses  <b>${resultado2}</b> fue aprovado, ` +
+                `<br><br>Con un total de  <b>${resultado3}</b> al finalizar, `,
             showCloseButton: true,
             showCancelButton: true,
             focusConfirm: false,
