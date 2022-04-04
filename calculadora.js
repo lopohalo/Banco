@@ -47,7 +47,7 @@ function calcular_venta_diblo(cuotas) {
             title: '<strong>ATENTO <u><br>Su credito se aprobaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprovar, ` +
+                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprobar, ` +
                 `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
@@ -71,7 +71,7 @@ function calcular_venta_diblo(cuotas) {
             title: '<strong>ATENTO <u><br>Su credito se aprobaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprovar, ` +
+                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprobar, ` +
                 `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
@@ -95,7 +95,7 @@ function calcular_venta_diblo(cuotas) {
             title: '<strong>ATENTO <u><br>Su credito se aprobaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprovar, ` +
+                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprobar, ` +
                 `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
@@ -119,7 +119,7 @@ function calcular_venta_diblo(cuotas) {
             title: '<strong>ATENTO <u><br>Su credito se aprobaria con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprovar, ` +
+                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprobar, ` +
                 `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
