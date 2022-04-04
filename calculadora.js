@@ -44,11 +44,11 @@ function calcular_venta_diblo(cuotas) {
         resultado2 = new Intl.NumberFormat().format(resultado2)
         resultado3 = new Intl.NumberFormat().format(resultado3)
         Swal.fire({
-            title: '<strong>ATENTO <u><br>Su credito se aprobaria con las siguientes espeficaciones</u></strong>',
+            title: '<strong>ATENTO <u><br>Su crédito se aprobaría con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprobar, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
+                `tu crédito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podría aprobar, ` +
+                `<br><br>con intereses del 2% usted pagaría al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
             showCancelButton: true,
@@ -68,11 +68,11 @@ function calcular_venta_diblo(cuotas) {
         resultado2 = new Intl.NumberFormat().format(resultado2)
         resultado3 = new Intl.NumberFormat().format(resultado3)
         Swal.fire({
-            title: '<strong>ATENTO <u><br>Su credito se aprobaria con las siguientes espeficaciones</u></strong>',
+            title: '<strong>ATENTO <u><br>Su crédito se aprobaría con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprobar, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
+                `tu crédito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podría aprobar, ` +
+                `<br><br>con intereses del 2% usted pagaría al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
             showCancelButton: true,
@@ -92,11 +92,11 @@ function calcular_venta_diblo(cuotas) {
         resultado2 = new Intl.NumberFormat().format(resultado2)
         resultado3 = new Intl.NumberFormat().format(resultado3)
         Swal.fire({
-            title: '<strong>ATENTO <u><br>Su credito se aprobaria con las siguientes espeficaciones</u></strong>',
+            title: '<strong>ATENTO <u><br>Su crédito se aprobaría con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprobar, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
+                `tu crédito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podría aprobar, ` +
+                `<br><br>con intereses del 2% usted pagaría al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
             showCancelButton: true,
@@ -116,11 +116,11 @@ function calcular_venta_diblo(cuotas) {
         resultado2 = new Intl.NumberFormat().format(resultado2)
         resultado3 = new Intl.NumberFormat().format(resultado3)
         Swal.fire({
-            title: '<strong>ATENTO <u><br>Su credito se aprobaria con las siguientes espeficaciones</u></strong>',
+            title: '<strong>ATENTO <u><br>Su crédito se aprobaría con las siguientes espeficaciones</u></strong>',
             icon: 'info',
             html:
-                `tu credito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podria aprobar, ` +
-                `<br><br>con intereses del 2% usted pagaria al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
+                `tu crédito de un valor de  <b>${valor_prestamo = new Intl.NumberFormat().format(valor_prestamo)}</b> se podría aprobar, ` +
+                `<br><br>con intereses del 2% usted pagaría al mes durante ${cuotas} meses de <b>${resultado2}</b>. ` +
                 `<br><br>Con un total de  <b>${resultado3}</b> al finalizar. `,
             showCloseButton: true,
             showCancelButton: true,
